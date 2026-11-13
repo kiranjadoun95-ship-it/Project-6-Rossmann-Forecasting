@@ -1,0 +1,921 @@
+2026-10-24 08:10:32,766 | INFO | Project 6 logging initialized.
+2026-10-24 08:10:32,767 | INFO | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-24 08:10:32,769 | INFO | Raw data directory: d:\Project_6_Rossmann_Forecasting\data\raw
+2026-10-24 08:11:33,983 | INFO | Starting original dataset loading.
+2026-10-24 08:11:34,721 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-24 08:11:34,750 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-24 08:11:34,756 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-24 08:11:34,764 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-24 08:11:34,773 | INFO | All four CSV files loaded successfully.
+2026-10-24 08:12:42,549 | INFO | Completed initial quality audit for train.
+2026-10-24 08:12:42,609 | INFO | Completed initial quality audit for test.
+2026-10-24 08:12:42,625 | INFO | Completed initial quality audit for store.
+2026-10-24 08:12:42,637 | INFO | Completed initial quality audit for sample_submission.
+2026-10-24 10:42:44,582 | INFO | train: found 0 exact duplicate rows.
+2026-10-24 10:42:44,599 | INFO | test: found 0 exact duplicate rows.
+2026-10-24 10:42:44,602 | INFO | store: found 0 exact duplicate rows.
+2026-10-24 10:42:44,609 | INFO | sample_submission: found 0 exact duplicate rows.
+2026-10-24 10:46:21,051 | INFO | train date validation: invalid=0, unique_dates=942
+2026-10-24 10:46:21,059 | INFO | test date validation: invalid=0, unique_dates=48
+2026-10-24 10:49:45,873 | INFO | train contains all checked required columns.
+2026-10-24 10:49:45,874 | INFO | test contains all checked required columns.
+2026-10-24 10:49:45,875 | INFO | store contains all checked required columns.
+2026-10-24 10:49:45,875 | INFO | sample_submission contains all checked required columns.
+2026-10-24 10:53:46,733 | INFO | Sample submission template validation completed.
+2026-10-24 11:02:43,991 | INFO | Store-key validation: duplicate metadata keys=0
+2026-10-24 11:06:10,475 | INFO | Inspected categorical values: train.StateHoliday
+2026-10-24 11:06:10,492 | INFO | Inspected categorical values: train.Promo
+2026-10-24 11:06:10,508 | INFO | Inspected categorical values: train.SchoolHoliday
+2026-10-24 11:06:10,527 | INFO | Inspected categorical values: train.Open
+2026-10-24 11:06:10,535 | INFO | Inspected categorical values: test.StateHoliday
+2026-10-24 11:06:10,542 | INFO | Inspected categorical values: test.Promo
+2026-10-24 11:06:10,546 | INFO | Inspected categorical values: test.SchoolHoliday
+2026-10-24 11:06:10,558 | INFO | Inspected categorical values: test.Open
+2026-10-24 11:06:10,566 | INFO | Inspected categorical values: store.StoreType
+2026-10-24 11:06:10,571 | INFO | Inspected categorical values: store.Assortment
+2026-10-24 11:06:10,577 | INFO | Inspected categorical values: store.Promo2
+2026-10-24 11:06:10,583 | INFO | Inspected categorical values: store.PromoInterval
+2026-10-24 11:26:49,679 | INFO | train dimensions: 1017209 rows, 9 columns
+2026-10-24 11:26:49,681 | INFO | test dimensions: 41088 rows, 8 columns
+2026-10-24 11:26:49,682 | INFO | store dimensions: 1115 rows, 10 columns
+2026-10-24 11:26:49,683 | INFO | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-24 11:27:40,051 | INFO | Displayed first and last five rows for train.
+2026-10-24 11:27:40,065 | INFO | Displayed first and last five rows for test.
+2026-10-24 11:27:40,082 | INFO | Displayed first and last five rows for store.
+2026-10-24 11:27:40,101 | INFO | Displayed first and last five rows for sample_submission.
+2026-10-24 11:28:46,121 | INFO | Schema inspection completed for train.
+2026-10-24 11:28:46,129 | INFO | Schema inspection completed for test.
+2026-10-24 11:28:46,136 | INFO | Schema inspection completed for store.
+2026-10-24 11:28:46,140 | INFO | Schema inspection completed for sample_submission.
+2026-10-24 11:30:01,237 | INFO | Descriptive statistics generated for train.
+2026-10-24 11:30:01,274 | INFO | Descriptive statistics generated for test.
+2026-10-24 11:30:01,295 | INFO | Descriptive statistics generated for store.
+2026-10-24 11:30:01,306 | INFO | Descriptive statistics generated for sample_submission.
+2026-10-24 11:39:52,653 | INFO | Missing-value and unique-value audit completed for train.
+2026-10-24 11:39:52,671 | INFO | Missing-value and unique-value audit completed for test.
+2026-10-24 11:39:52,682 | INFO | Missing-value and unique-value audit completed for store.
+2026-10-24 11:39:52,692 | INFO | Missing-value and unique-value audit completed for sample_submission.
+2026-10-24 13:08:13,955 | INFO | train duplicate Store-Date pairs: 0
+2026-10-24 13:08:13,964 | INFO | test duplicate Store-Date pairs: 0
+2026-10-24 13:08:13,967 | INFO | Row-level key validation completed.
+2026-10-24 13:40:27,041 | INFO | StateHoliday representation investigation completed for train.
+2026-10-24 13:40:27,048 | INFO | StateHoliday representation investigation completed for test.
+2026-10-24 13:49:24,213 | INFO | Data validation summary generated.
+2026-10-24 14:22:19,115 | INFO | Training dataset data dictionary generated for 9 columns.
+2026-10-24 16:27:32,393 | INFO | Test dataset data dictionary generated for 8 columns.
+2026-10-24 16:30:01,157 | INFO | Store metadata data dictionary generated for 10 columns.
+2026-10-24 16:32:19,458 | INFO | Sample submission data dictionary generated for 2 columns.
+2026-10-24 16:34:43,021 | INFO | Working copies created; original source dataframes preserved.
+2026-10-24 16:37:12,202 | INFO | train schema validated: 1017209 rows and 9 columns.
+2026-10-24 16:37:12,216 | INFO | test schema validated: 41088 rows and 8 columns.
+2026-10-24 16:37:12,228 | INFO | store schema validated: 1115 rows and 10 columns.
+2026-10-24 16:37:12,238 | INFO | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-24 16:58:10,695 | INFO | train date inspection: unparseable=0, unique_dates=942
+2026-10-24 16:58:10,703 | INFO | test date inspection: unparseable=0, unique_dates=48
+2026-10-24 16:58:10,742 | INFO | Date and categorical-value inspection completed.
+2026-10-24 18:25:16,811 | INFO | Working-copy dates standardized and categorical values inspected.
+2026-10-25 11:45:33,906 | INFO | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 11:45:33,924 | INFO | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-25 11:45:33,942 | INFO | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-25 11:45:33,949 | INFO | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 11:48:28,055 | INFO | Store metadata missingness investigation completed.
+2026-10-25 11:50:54,569 | INFO | Identified 3 stores with missing CompetitionDistance.
+2026-10-25 11:50:54,585 | INFO | Identified 11 test rows with missing Open status.
+2026-10-25 11:52:52,154 | INFO | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-25 11:56:51,612 | INFO | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-25 12:04:40,025 | INFO | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-25 12:06:32,994 | INFO | Historical evidence check completed for 11 missing Open records.
+2026-10-25 12:08:35,015 | INFO | Historical opening evidence summarized for 11 records.
+2026-10-25 12:30:48,537 | INFO | Starting original dataset loading.
+2026-10-25 12:30:48,807 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-25 12:30:48,813 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-25 12:30:48,818 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-25 12:30:48,825 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-25 12:30:48,850 | INFO | All four CSV files loaded successfully.
+2026-10-25 12:38:47,785 | INFO | Project 6 logging initialized.
+2026-10-25 12:38:47,786 | INFO | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-25 12:38:47,788 | INFO | Raw data directory: d:\Project_6_Rossmann_Forecasting\data\raw
+2026-10-25 12:38:47,814 | INFO | Starting original dataset loading.
+2026-10-25 12:38:48,067 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-25 12:38:48,073 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-25 12:38:48,079 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-25 12:38:48,085 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-25 12:38:48,101 | INFO | All four CSV files loaded successfully.
+2026-10-25 12:38:48,118 | INFO | train dimensions: 1017209 rows, 9 columns
+2026-10-25 12:38:48,120 | INFO | test dimensions: 41088 rows, 8 columns
+2026-10-25 12:38:48,121 | INFO | store dimensions: 1115 rows, 10 columns
+2026-10-25 12:38:48,122 | INFO | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-25 12:38:48,148 | INFO | Displayed first and last five rows for train.
+2026-10-25 12:38:48,166 | INFO | Displayed first and last five rows for test.
+2026-10-25 12:38:48,185 | INFO | Displayed first and last five rows for store.
+2026-10-25 12:38:48,202 | INFO | Displayed first and last five rows for sample_submission.
+2026-10-25 12:38:48,289 | INFO | Schema inspection completed for train.
+2026-10-25 12:38:48,297 | INFO | Schema inspection completed for test.
+2026-10-25 12:38:48,304 | INFO | Schema inspection completed for store.
+2026-10-25 12:38:48,309 | INFO | Schema inspection completed for sample_submission.
+2026-10-25 12:38:48,683 | INFO | Descriptive statistics generated for train.
+2026-10-25 12:38:48,709 | INFO | Descriptive statistics generated for test.
+2026-10-25 12:38:48,725 | INFO | Descriptive statistics generated for store.
+2026-10-25 12:38:48,733 | INFO | Descriptive statistics generated for sample_submission.
+2026-10-25 12:38:48,957 | INFO | Missing-value and unique-value audit completed for train.
+2026-10-25 12:38:48,973 | INFO | Missing-value and unique-value audit completed for test.
+2026-10-25 12:38:48,982 | INFO | Missing-value and unique-value audit completed for store.
+2026-10-25 12:38:48,992 | INFO | Missing-value and unique-value audit completed for sample_submission.
+2026-10-25 12:38:49,292 | INFO | train: found 0 exact duplicate rows.
+2026-10-25 12:38:49,306 | INFO | test: found 0 exact duplicate rows.
+2026-10-25 12:38:49,337 | INFO | store: found 0 exact duplicate rows.
+2026-10-25 12:38:49,341 | INFO | sample_submission: found 0 exact duplicate rows.
+2026-10-25 12:38:49,435 | INFO | train date validation: invalid=0, unique_dates=942
+2026-10-25 12:38:49,443 | INFO | test date validation: invalid=0, unique_dates=48
+2026-10-25 12:38:49,465 | INFO | train contains all checked required columns.
+2026-10-25 12:38:49,466 | INFO | test contains all checked required columns.
+2026-10-25 12:38:49,467 | INFO | store contains all checked required columns.
+2026-10-25 12:38:49,470 | INFO | sample_submission contains all checked required columns.
+2026-10-25 12:38:49,503 | INFO | Store-key validation: duplicate metadata keys=0
+2026-10-25 12:38:49,532 | INFO | Sample submission template validation completed.
+2026-10-25 12:38:49,580 | INFO | Inspected categorical values: train.StateHoliday
+2026-10-25 12:38:49,598 | INFO | Inspected categorical values: train.Promo
+2026-10-25 12:38:49,615 | INFO | Inspected categorical values: train.SchoolHoliday
+2026-10-25 12:38:49,623 | INFO | Inspected categorical values: train.Open
+2026-10-25 12:38:49,633 | INFO | Inspected categorical values: test.StateHoliday
+2026-10-25 12:38:49,641 | INFO | Inspected categorical values: test.Promo
+2026-10-25 12:38:49,648 | INFO | Inspected categorical values: test.SchoolHoliday
+2026-10-25 12:38:49,653 | INFO | Inspected categorical values: test.Open
+2026-10-25 12:38:49,659 | INFO | Inspected categorical values: store.StoreType
+2026-10-25 12:38:49,665 | INFO | Inspected categorical values: store.Assortment
+2026-10-25 12:38:49,670 | INFO | Inspected categorical values: store.Promo2
+2026-10-25 12:38:49,678 | INFO | Inspected categorical values: store.PromoInterval
+2026-10-25 12:38:49,795 | INFO | train duplicate Store-Date pairs: 0
+2026-10-25 12:38:49,800 | INFO | test duplicate Store-Date pairs: 0
+2026-10-25 12:38:49,804 | INFO | Row-level key validation completed.
+2026-10-25 12:38:49,879 | INFO | StateHoliday representation investigation completed for train.
+2026-10-25 12:38:49,884 | INFO | StateHoliday representation investigation completed for test.
+2026-10-25 12:38:50,074 | INFO | Data validation summary generated.
+2026-10-25 12:38:50,108 | INFO | Training dataset data dictionary generated for 9 columns.
+2026-10-25 12:38:50,137 | INFO | Test dataset data dictionary generated for 8 columns.
+2026-10-25 12:38:50,160 | INFO | Store metadata data dictionary generated for 10 columns.
+2026-10-25 12:38:50,188 | INFO | Sample submission data dictionary generated for 2 columns.
+2026-10-25 12:38:50,248 | INFO | Working copies created; original source dataframes preserved.
+2026-10-25 12:38:50,422 | INFO | train schema validated: 1017209 rows and 9 columns.
+2026-10-25 12:38:50,434 | INFO | test schema validated: 41088 rows and 8 columns.
+2026-10-25 12:38:50,441 | INFO | store schema validated: 1115 rows and 10 columns.
+2026-10-25 12:38:50,447 | INFO | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-25 12:38:50,567 | INFO | train date inspection: unparseable=0, unique_dates=942
+2026-10-25 12:38:50,574 | INFO | test date inspection: unparseable=0, unique_dates=48
+2026-10-25 12:38:50,600 | INFO | Date and categorical-value inspection completed.
+2026-10-25 12:38:50,724 | INFO | Working-copy dates standardized and categorical values inspected.
+2026-10-25 12:38:50,818 | INFO | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 12:38:50,826 | INFO | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-25 12:38:50,836 | INFO | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-25 12:38:50,842 | INFO | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 12:38:50,894 | INFO | Store metadata missingness investigation completed.
+2026-10-25 12:38:50,922 | INFO | Identified 3 stores with missing CompetitionDistance.
+2026-10-25 12:38:50,934 | INFO | Identified 11 test rows with missing Open status.
+2026-10-25 12:38:50,983 | INFO | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-25 12:38:51,036 | INFO | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-25 12:38:51,064 | INFO | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-25 12:38:51,195 | INFO | Historical evidence check completed for 11 missing Open records.
+2026-10-25 12:39:03,206 | INFO | Project 6 logging initialized.
+2026-10-25 12:39:03,207 | INFO | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-25 12:39:03,208 | INFO | Raw data directory: d:\Project_6_Rossmann_Forecasting\data\raw
+2026-10-25 12:39:03,228 | INFO | Starting original dataset loading.
+2026-10-25 12:39:03,545 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-25 12:39:03,549 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-25 12:39:03,558 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-25 12:39:03,566 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-25 12:39:03,587 | INFO | All four CSV files loaded successfully.
+2026-10-25 12:39:03,604 | INFO | train dimensions: 1017209 rows, 9 columns
+2026-10-25 12:39:03,605 | INFO | test dimensions: 41088 rows, 8 columns
+2026-10-25 12:39:03,605 | INFO | store dimensions: 1115 rows, 10 columns
+2026-10-25 12:39:03,607 | INFO | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-25 12:39:03,634 | INFO | Displayed first and last five rows for train.
+2026-10-25 12:39:03,647 | INFO | Displayed first and last five rows for test.
+2026-10-25 12:39:03,660 | INFO | Displayed first and last five rows for store.
+2026-10-25 12:39:03,670 | INFO | Displayed first and last five rows for sample_submission.
+2026-10-25 12:39:03,742 | INFO | Schema inspection completed for train.
+2026-10-25 12:39:03,749 | INFO | Schema inspection completed for test.
+2026-10-25 12:39:03,755 | INFO | Schema inspection completed for store.
+2026-10-25 12:39:03,760 | INFO | Schema inspection completed for sample_submission.
+2026-10-25 12:39:04,125 | INFO | Descriptive statistics generated for train.
+2026-10-25 12:39:04,154 | INFO | Descriptive statistics generated for test.
+2026-10-25 12:39:04,172 | INFO | Descriptive statistics generated for store.
+2026-10-25 12:39:04,182 | INFO | Descriptive statistics generated for sample_submission.
+2026-10-25 12:39:04,454 | INFO | Missing-value and unique-value audit completed for train.
+2026-10-25 12:39:04,470 | INFO | Missing-value and unique-value audit completed for test.
+2026-10-25 12:39:04,478 | INFO | Missing-value and unique-value audit completed for store.
+2026-10-25 12:39:04,487 | INFO | Missing-value and unique-value audit completed for sample_submission.
+2026-10-25 12:39:04,775 | INFO | train: found 0 exact duplicate rows.
+2026-10-25 12:39:04,789 | INFO | test: found 0 exact duplicate rows.
+2026-10-25 12:39:04,791 | INFO | store: found 0 exact duplicate rows.
+2026-10-25 12:39:04,795 | INFO | sample_submission: found 0 exact duplicate rows.
+2026-10-25 12:39:04,895 | INFO | train date validation: invalid=0, unique_dates=942
+2026-10-25 12:39:04,906 | INFO | test date validation: invalid=0, unique_dates=48
+2026-10-25 12:39:04,936 | INFO | train contains all checked required columns.
+2026-10-25 12:39:04,938 | INFO | test contains all checked required columns.
+2026-10-25 12:39:04,942 | INFO | store contains all checked required columns.
+2026-10-25 12:39:04,944 | INFO | sample_submission contains all checked required columns.
+2026-10-25 12:39:04,987 | INFO | Store-key validation: duplicate metadata keys=0
+2026-10-25 12:39:05,025 | INFO | Sample submission template validation completed.
+2026-10-25 12:39:05,056 | INFO | Inspected categorical values: train.StateHoliday
+2026-10-25 12:39:05,067 | INFO | Inspected categorical values: train.Promo
+2026-10-25 12:39:05,076 | INFO | Inspected categorical values: train.SchoolHoliday
+2026-10-25 12:39:05,087 | INFO | Inspected categorical values: train.Open
+2026-10-25 12:39:05,092 | INFO | Inspected categorical values: test.StateHoliday
+2026-10-25 12:39:05,098 | INFO | Inspected categorical values: test.Promo
+2026-10-25 12:39:05,106 | INFO | Inspected categorical values: test.SchoolHoliday
+2026-10-25 12:39:05,112 | INFO | Inspected categorical values: test.Open
+2026-10-25 12:39:05,119 | INFO | Inspected categorical values: store.StoreType
+2026-10-25 12:39:05,125 | INFO | Inspected categorical values: store.Assortment
+2026-10-25 12:39:05,129 | INFO | Inspected categorical values: store.Promo2
+2026-10-25 12:39:05,136 | INFO | Inspected categorical values: store.PromoInterval
+2026-10-25 12:39:05,260 | INFO | train duplicate Store-Date pairs: 0
+2026-10-25 12:39:05,267 | INFO | test duplicate Store-Date pairs: 0
+2026-10-25 12:39:05,270 | INFO | Row-level key validation completed.
+2026-10-25 12:39:05,343 | INFO | StateHoliday representation investigation completed for train.
+2026-10-25 12:39:05,348 | INFO | StateHoliday representation investigation completed for test.
+2026-10-25 12:39:05,540 | INFO | Data validation summary generated.
+2026-10-25 12:39:05,560 | INFO | Training dataset data dictionary generated for 9 columns.
+2026-10-25 12:39:05,591 | INFO | Test dataset data dictionary generated for 8 columns.
+2026-10-25 12:39:05,611 | INFO | Store metadata data dictionary generated for 10 columns.
+2026-10-25 12:39:05,628 | INFO | Sample submission data dictionary generated for 2 columns.
+2026-10-25 12:39:05,683 | INFO | Working copies created; original source dataframes preserved.
+2026-10-25 12:39:05,851 | INFO | train schema validated: 1017209 rows and 9 columns.
+2026-10-25 12:39:05,863 | INFO | test schema validated: 41088 rows and 8 columns.
+2026-10-25 12:39:05,871 | INFO | store schema validated: 1115 rows and 10 columns.
+2026-10-25 12:39:05,877 | INFO | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-25 12:39:05,994 | INFO | train date inspection: unparseable=0, unique_dates=942
+2026-10-25 12:39:06,003 | INFO | test date inspection: unparseable=0, unique_dates=48
+2026-10-25 12:39:06,031 | INFO | Date and categorical-value inspection completed.
+2026-10-25 12:39:06,145 | INFO | Working-copy dates standardized and categorical values inspected.
+2026-10-25 12:39:06,233 | INFO | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 12:39:06,241 | INFO | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-25 12:39:06,248 | INFO | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-25 12:39:06,253 | INFO | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 12:39:06,290 | INFO | Store metadata missingness investigation completed.
+2026-10-25 12:39:06,309 | INFO | Identified 3 stores with missing CompetitionDistance.
+2026-10-25 12:39:06,316 | INFO | Identified 11 test rows with missing Open status.
+2026-10-25 12:39:06,355 | INFO | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-25 12:39:06,402 | INFO | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-25 12:39:06,428 | INFO | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-25 12:39:06,555 | INFO | Historical evidence check completed for 11 missing Open records.
+2026-10-25 12:42:39,897 | INFO | All dynamic data validation checks passed.
+2026-10-25 19:18:48,323 | INFO | Project 6 logging initialized.
+2026-10-25 19:18:48,325 | INFO | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-25 19:18:48,327 | INFO | Raw data directory: d:\Project_6_Rossmann_Forecasting\data\raw
+2026-10-25 19:18:48,352 | INFO | Starting original dataset loading.
+2026-10-25 19:18:48,684 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-25 19:18:48,698 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-25 19:18:48,716 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-25 19:18:48,736 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-25 19:18:48,779 | INFO | All four CSV files loaded successfully.
+2026-10-25 19:18:48,818 | INFO | train dimensions: 1017209 rows, 9 columns
+2026-10-25 19:18:48,822 | INFO | test dimensions: 41088 rows, 8 columns
+2026-10-25 19:18:48,825 | INFO | store dimensions: 1115 rows, 10 columns
+2026-10-25 19:18:48,827 | INFO | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-25 19:18:48,887 | INFO | Displayed first and last five rows for train.
+2026-10-25 19:18:48,910 | INFO | Displayed first and last five rows for test.
+2026-10-25 19:18:48,932 | INFO | Displayed first and last five rows for store.
+2026-10-25 19:18:48,946 | INFO | Displayed first and last five rows for sample_submission.
+2026-10-25 19:18:49,034 | INFO | Schema inspection completed for train.
+2026-10-25 19:18:49,043 | INFO | Schema inspection completed for test.
+2026-10-25 19:18:49,049 | INFO | Schema inspection completed for store.
+2026-10-25 19:18:49,056 | INFO | Schema inspection completed for sample_submission.
+2026-10-25 19:18:49,409 | INFO | Descriptive statistics generated for train.
+2026-10-25 19:18:49,433 | INFO | Descriptive statistics generated for test.
+2026-10-25 19:18:49,449 | INFO | Descriptive statistics generated for store.
+2026-10-25 19:18:49,460 | INFO | Descriptive statistics generated for sample_submission.
+2026-10-25 19:18:49,677 | INFO | Missing-value and unique-value audit completed for train.
+2026-10-25 19:18:49,694 | INFO | Missing-value and unique-value audit completed for test.
+2026-10-25 19:18:49,702 | INFO | Missing-value and unique-value audit completed for store.
+2026-10-25 19:18:49,714 | INFO | Missing-value and unique-value audit completed for sample_submission.
+2026-10-25 19:18:49,990 | INFO | train: found 0 exact duplicate rows.
+2026-10-25 19:18:50,006 | INFO | test: found 0 exact duplicate rows.
+2026-10-25 19:18:50,009 | INFO | store: found 0 exact duplicate rows.
+2026-10-25 19:18:50,013 | INFO | sample_submission: found 0 exact duplicate rows.
+2026-10-25 19:18:50,107 | INFO | train date validation: invalid=0, unique_dates=942
+2026-10-25 19:18:50,113 | INFO | test date validation: invalid=0, unique_dates=48
+2026-10-25 19:18:50,128 | INFO | train contains all checked required columns.
+2026-10-25 19:18:50,129 | INFO | test contains all checked required columns.
+2026-10-25 19:18:50,130 | INFO | store contains all checked required columns.
+2026-10-25 19:18:50,132 | INFO | sample_submission contains all checked required columns.
+2026-10-25 19:18:50,168 | INFO | Store-key validation: duplicate metadata keys=0
+2026-10-25 19:18:50,200 | INFO | Sample submission template validation completed.
+2026-10-25 19:18:50,232 | INFO | Inspected categorical values: train.StateHoliday
+2026-10-25 19:18:50,243 | INFO | Inspected categorical values: train.Promo
+2026-10-25 19:18:50,254 | INFO | Inspected categorical values: train.SchoolHoliday
+2026-10-25 19:18:50,263 | INFO | Inspected categorical values: train.Open
+2026-10-25 19:18:50,273 | INFO | Inspected categorical values: test.StateHoliday
+2026-10-25 19:18:50,278 | INFO | Inspected categorical values: test.Promo
+2026-10-25 19:18:50,284 | INFO | Inspected categorical values: test.SchoolHoliday
+2026-10-25 19:18:50,291 | INFO | Inspected categorical values: test.Open
+2026-10-25 19:18:50,296 | INFO | Inspected categorical values: store.StoreType
+2026-10-25 19:18:50,300 | INFO | Inspected categorical values: store.Assortment
+2026-10-25 19:18:50,308 | INFO | Inspected categorical values: store.Promo2
+2026-10-25 19:18:50,314 | INFO | Inspected categorical values: store.PromoInterval
+2026-10-25 19:18:50,436 | INFO | train duplicate Store-Date pairs: 0
+2026-10-25 19:18:50,442 | INFO | test duplicate Store-Date pairs: 0
+2026-10-25 19:18:50,446 | INFO | Row-level key validation completed.
+2026-10-25 19:18:50,524 | INFO | StateHoliday representation investigation completed for train.
+2026-10-25 19:18:50,529 | INFO | StateHoliday representation investigation completed for test.
+2026-10-25 19:18:51,149 | INFO | All dynamic data validation checks passed.
+2026-10-25 19:18:51,173 | INFO | Training dataset data dictionary generated for 9 columns.
+2026-10-25 19:18:51,212 | INFO | Test dataset data dictionary generated for 8 columns.
+2026-10-25 19:18:51,239 | INFO | Store metadata data dictionary generated for 10 columns.
+2026-10-25 19:18:51,279 | INFO | Sample submission data dictionary generated for 2 columns.
+2026-10-25 19:18:51,343 | INFO | Working copies created; original source dataframes preserved.
+2026-10-25 19:18:51,509 | INFO | train schema validated: 1017209 rows and 9 columns.
+2026-10-25 19:18:51,522 | INFO | test schema validated: 41088 rows and 8 columns.
+2026-10-25 19:18:51,530 | INFO | store schema validated: 1115 rows and 10 columns.
+2026-10-25 19:18:51,538 | INFO | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-25 19:18:51,635 | INFO | train date inspection: unparseable=0, unique_dates=942
+2026-10-25 19:18:51,642 | INFO | test date inspection: unparseable=0, unique_dates=48
+2026-10-25 19:18:51,674 | INFO | Date and categorical-value inspection completed.
+2026-10-25 19:18:51,805 | INFO | Working-copy dates standardized and categorical values inspected.
+2026-10-25 19:18:51,892 | INFO | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 19:18:51,899 | INFO | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-25 19:18:51,905 | INFO | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-25 19:18:51,909 | INFO | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 19:18:51,948 | INFO | Store metadata missingness investigation completed.
+2026-10-25 19:18:51,972 | INFO | Identified 3 stores with missing CompetitionDistance.
+2026-10-25 19:18:51,982 | INFO | Identified 11 test rows with missing Open status.
+2026-10-25 19:18:52,026 | INFO | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-25 19:18:52,077 | INFO | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-25 19:18:52,102 | INFO | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-25 19:18:52,272 | INFO | Historical evidence check completed for 11 missing Open records.
+2026-10-25 19:35:33,681 | INFO | All dynamic data validation checks passed.
+2026-10-25 19:47:24,898 | INFO | All dynamic data validation checks passed.
+2026-10-25 19:49:46,255 | INFO | Merge prerequisites validated successfully.
+2026-10-25 19:51:25,874 | INFO | Merge prerequisites validated successfully.
+2026-10-25 19:52:21,176 | INFO | Training metadata merge completed: 1017209 rows, 18 columns.
+2026-10-25 19:53:03,794 | INFO | Test metadata merge completed: 41088 rows, 17 columns.
+2026-10-25 19:53:45,345 | INFO | All post-merge integrity checks passed.
+2026-10-25 19:54:33,563 | INFO | Final merged datasets exported successfully to d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-25 19:55:02,546 | INFO | Project 6 logging initialized.
+2026-10-25 19:55:02,547 | INFO | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-25 19:55:02,548 | INFO | Raw data directory: d:\Project_6_Rossmann_Forecasting\data\raw
+2026-10-25 19:55:02,565 | INFO | Starting original dataset loading.
+2026-10-25 19:55:02,811 | INFO | Loaded train: 1017209 rows, 9 columns
+2026-10-25 19:55:02,815 | INFO | Loaded test: 41088 rows, 8 columns
+2026-10-25 19:55:02,824 | INFO | Loaded store: 1115 rows, 10 columns
+2026-10-25 19:55:02,831 | INFO | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-25 19:55:02,851 | INFO | All four CSV files loaded successfully.
+2026-10-25 19:55:02,866 | INFO | train dimensions: 1017209 rows, 9 columns
+2026-10-25 19:55:02,868 | INFO | test dimensions: 41088 rows, 8 columns
+2026-10-25 19:55:02,869 | INFO | store dimensions: 1115 rows, 10 columns
+2026-10-25 19:55:02,870 | INFO | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-25 19:55:02,895 | INFO | Displayed first and last five rows for train.
+2026-10-25 19:55:02,908 | INFO | Displayed first and last five rows for test.
+2026-10-25 19:55:02,923 | INFO | Displayed first and last five rows for store.
+2026-10-25 19:55:02,931 | INFO | Displayed first and last five rows for sample_submission.
+2026-10-25 19:55:02,998 | INFO | Schema inspection completed for train.
+2026-10-25 19:55:03,006 | INFO | Schema inspection completed for test.
+2026-10-25 19:55:03,009 | INFO | Schema inspection completed for store.
+2026-10-25 19:55:03,013 | INFO | Schema inspection completed for sample_submission.
+2026-10-25 19:55:03,309 | INFO | Descriptive statistics generated for train.
+2026-10-25 19:55:03,330 | INFO | Descriptive statistics generated for test.
+2026-10-25 19:55:03,348 | INFO | Descriptive statistics generated for store.
+2026-10-25 19:55:03,359 | INFO | Descriptive statistics generated for sample_submission.
+2026-10-25 19:55:03,575 | INFO | Missing-value and unique-value audit completed for train.
+2026-10-25 19:55:03,591 | INFO | Missing-value and unique-value audit completed for test.
+2026-10-25 19:55:03,599 | INFO | Missing-value and unique-value audit completed for store.
+2026-10-25 19:55:03,608 | INFO | Missing-value and unique-value audit completed for sample_submission.
+2026-10-25 19:55:03,878 | INFO | train: found 0 exact duplicate rows.
+2026-10-25 19:55:03,890 | INFO | test: found 0 exact duplicate rows.
+2026-10-25 19:55:03,893 | INFO | store: found 0 exact duplicate rows.
+2026-10-25 19:55:03,897 | INFO | sample_submission: found 0 exact duplicate rows.
+2026-10-25 19:55:03,987 | INFO | train date validation: invalid=0, unique_dates=942
+2026-10-25 19:55:03,993 | INFO | test date validation: invalid=0, unique_dates=48
+2026-10-25 19:55:04,008 | INFO | train contains all checked required columns.
+2026-10-25 19:55:04,009 | INFO | test contains all checked required columns.
+2026-10-25 19:55:04,010 | INFO | store contains all checked required columns.
+2026-10-25 19:55:04,012 | INFO | sample_submission contains all checked required columns.
+2026-10-25 19:55:04,040 | INFO | Store-key validation: duplicate metadata keys=0
+2026-10-25 19:55:04,068 | INFO | Sample submission template validation completed.
+2026-10-25 19:55:04,110 | INFO | Inspected categorical values: train.StateHoliday
+2026-10-25 19:55:04,121 | INFO | Inspected categorical values: train.Promo
+2026-10-25 19:55:04,131 | INFO | Inspected categorical values: train.SchoolHoliday
+2026-10-25 19:55:04,145 | INFO | Inspected categorical values: train.Open
+2026-10-25 19:55:04,154 | INFO | Inspected categorical values: test.StateHoliday
+2026-10-25 19:55:04,161 | INFO | Inspected categorical values: test.Promo
+2026-10-25 19:55:04,169 | INFO | Inspected categorical values: test.SchoolHoliday
+2026-10-25 19:55:04,176 | INFO | Inspected categorical values: test.Open
+2026-10-25 19:55:04,182 | INFO | Inspected categorical values: store.StoreType
+2026-10-25 19:55:04,190 | INFO | Inspected categorical values: store.Assortment
+2026-10-25 19:55:04,195 | INFO | Inspected categorical values: store.Promo2
+2026-10-25 19:55:04,204 | INFO | Inspected categorical values: store.PromoInterval
+2026-10-25 19:55:04,330 | INFO | train duplicate Store-Date pairs: 0
+2026-10-25 19:55:04,340 | INFO | test duplicate Store-Date pairs: 0
+2026-10-25 19:55:04,345 | INFO | Row-level key validation completed.
+2026-10-25 19:55:04,439 | INFO | StateHoliday representation investigation completed for train.
+2026-10-25 19:55:04,443 | INFO | StateHoliday representation investigation completed for test.
+2026-10-25 19:55:05,003 | INFO | All dynamic data validation checks passed.
+2026-10-25 19:55:05,035 | INFO | Training dataset data dictionary generated for 9 columns.
+2026-10-25 19:55:05,063 | INFO | Test dataset data dictionary generated for 8 columns.
+2026-10-25 19:55:05,092 | INFO | Store metadata data dictionary generated for 10 columns.
+2026-10-25 19:55:05,124 | INFO | Sample submission data dictionary generated for 2 columns.
+2026-10-25 19:55:05,189 | INFO | Working copies created; original source dataframes preserved.
+2026-10-25 19:55:05,365 | INFO | train schema validated: 1017209 rows and 9 columns.
+2026-10-25 19:55:05,378 | INFO | test schema validated: 41088 rows and 8 columns.
+2026-10-25 19:55:05,386 | INFO | store schema validated: 1115 rows and 10 columns.
+2026-10-25 19:55:05,394 | INFO | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-25 19:55:05,486 | INFO | train date inspection: unparseable=0, unique_dates=942
+2026-10-25 19:55:05,491 | INFO | test date inspection: unparseable=0, unique_dates=48
+2026-10-25 19:55:05,519 | INFO | Date and categorical-value inspection completed.
+2026-10-25 19:55:05,646 | INFO | Working-copy dates standardized and categorical values inspected.
+2026-10-25 19:55:05,730 | INFO | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 19:55:05,740 | INFO | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-25 19:55:05,747 | INFO | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-25 19:55:05,752 | INFO | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-25 19:55:05,792 | INFO | Store metadata missingness investigation completed.
+2026-10-25 19:55:05,827 | INFO | Identified 3 stores with missing CompetitionDistance.
+2026-10-25 19:55:05,838 | INFO | Identified 11 test rows with missing Open status.
+2026-10-25 19:55:05,884 | INFO | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-25 19:55:05,944 | INFO | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-25 19:55:05,974 | INFO | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-25 19:55:06,114 | INFO | Historical evidence check completed for 11 missing Open records.
+2026-10-25 19:55:06,243 | INFO | Merge prerequisites validated successfully.
+2026-10-25 19:55:06,486 | INFO | Training metadata merge completed: 1017209 rows, 18 columns.
+2026-10-25 19:55:06,522 | INFO | Test metadata merge completed: 41088 rows, 17 columns.
+2026-10-25 19:55:06,644 | INFO | All post-merge integrity checks passed.
+2026-10-25 19:55:11,569 | INFO | Final merged datasets exported successfully to d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-26 11:29:03,503 | INFO | All post-merge integrity checks passed.
+2026-10-26 11:32:12 | INFO | Project6 | Project 6 logging system initialized successfully.
+2026-10-26 11:32:12 | INFO | Project6 | Log file location: D:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-26 11:41:52 | INFO | Project6 | Project 6 logging system initialized successfully.
+2026-10-26 11:41:52 | INFO | Project6 | Log file location: D:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-26 11:41:52 | INFO | Project6 | Starting original dataset loading.
+2026-10-26 11:41:52 | INFO | Project6 | Loaded train: 1017209 rows, 9 columns
+2026-10-26 11:41:52 | INFO | Project6 | Loaded test: 41088 rows, 8 columns
+2026-10-26 11:41:52 | INFO | Project6 | Loaded store: 1115 rows, 10 columns
+2026-10-26 11:41:52 | INFO | Project6 | Loaded sample_submission: 41088 rows, 2 columns
+2026-10-26 11:41:52 | INFO | Project6 | All four CSV files loaded successfully.
+2026-10-26 11:41:53 | INFO | Project6 | train dimensions: 1017209 rows, 9 columns
+2026-10-26 11:41:53 | INFO | Project6 | test dimensions: 41088 rows, 8 columns
+2026-10-26 11:41:53 | INFO | Project6 | store dimensions: 1115 rows, 10 columns
+2026-10-26 11:41:53 | INFO | Project6 | sample_submission dimensions: 41088 rows, 2 columns
+2026-10-26 11:41:53 | INFO | Project6 | Displayed first and last five rows for train.
+2026-10-26 11:41:53 | INFO | Project6 | Displayed first and last five rows for test.
+2026-10-26 11:41:53 | INFO | Project6 | Displayed first and last five rows for store.
+2026-10-26 11:41:53 | INFO | Project6 | Displayed first and last five rows for sample_submission.
+2026-10-26 11:41:53 | INFO | Project6 | Schema inspection completed for train.
+2026-10-26 11:41:53 | INFO | Project6 | Schema inspection completed for test.
+2026-10-26 11:41:53 | INFO | Project6 | Schema inspection completed for store.
+2026-10-26 11:41:53 | INFO | Project6 | Schema inspection completed for sample_submission.
+2026-10-26 11:41:53 | INFO | Project6 | Descriptive statistics generated for train.
+2026-10-26 11:41:53 | INFO | Project6 | Descriptive statistics generated for test.
+2026-10-26 11:41:53 | INFO | Project6 | Descriptive statistics generated for store.
+2026-10-26 11:41:53 | INFO | Project6 | Descriptive statistics generated for sample_submission.
+2026-10-26 11:41:53 | INFO | Project6 | Missing-value and unique-value audit completed for train.
+2026-10-26 11:41:53 | INFO | Project6 | Missing-value and unique-value audit completed for test.
+2026-10-26 11:41:53 | INFO | Project6 | Missing-value and unique-value audit completed for store.
+2026-10-26 11:41:53 | INFO | Project6 | Missing-value and unique-value audit completed for sample_submission.
+2026-10-26 11:41:53 | INFO | Project6 | train: found 0 exact duplicate rows.
+2026-10-26 11:41:53 | INFO | Project6 | test: found 0 exact duplicate rows.
+2026-10-26 11:41:53 | INFO | Project6 | store: found 0 exact duplicate rows.
+2026-10-26 11:41:53 | INFO | Project6 | sample_submission: found 0 exact duplicate rows.
+2026-10-26 11:41:54 | INFO | Project6 | train date validation: invalid=0, unique_dates=942
+2026-10-26 11:41:54 | INFO | Project6 | test date validation: invalid=0, unique_dates=48
+2026-10-26 11:41:54 | INFO | Project6 | train contains all checked required columns.
+2026-10-26 11:41:54 | INFO | Project6 | test contains all checked required columns.
+2026-10-26 11:41:54 | INFO | Project6 | store contains all checked required columns.
+2026-10-26 11:41:54 | INFO | Project6 | sample_submission contains all checked required columns.
+2026-10-26 11:41:54 | INFO | Project6 | Store-key validation: duplicate metadata keys=0
+2026-10-26 11:41:54 | INFO | Project6 | Sample submission template validation completed.
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: train.StateHoliday
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: train.Promo
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: train.SchoolHoliday
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: train.Open
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: test.StateHoliday
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: test.Promo
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: test.SchoolHoliday
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: test.Open
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: store.StoreType
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: store.Assortment
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: store.Promo2
+2026-10-26 11:41:54 | INFO | Project6 | Inspected categorical values: store.PromoInterval
+2026-10-26 11:41:54 | INFO | Project6 | train duplicate Store-Date pairs: 0
+2026-10-26 11:41:54 | INFO | Project6 | test duplicate Store-Date pairs: 0
+2026-10-26 11:41:54 | INFO | Project6 | Row-level key validation completed.
+2026-10-26 11:41:54 | INFO | Project6 | StateHoliday representation investigation completed for train.
+2026-10-26 11:41:54 | INFO | Project6 | StateHoliday representation investigation completed for test.
+2026-10-26 11:41:54 | INFO | Project6 | All dynamic data validation checks passed.
+2026-10-26 11:41:54 | INFO | Project6 | Training dataset data dictionary generated for 9 columns.
+2026-10-26 11:41:54 | INFO | Project6 | Test dataset data dictionary generated for 8 columns.
+2026-10-26 11:41:54 | INFO | Project6 | Store metadata data dictionary generated for 10 columns.
+2026-10-26 11:41:54 | INFO | Project6 | Sample submission data dictionary generated for 2 columns.
+2026-10-26 11:41:54 | INFO | Project6 | Working copies created; original source dataframes preserved.
+2026-10-26 11:41:55 | INFO | Project6 | train schema validated: 1017209 rows and 9 columns.
+2026-10-26 11:41:55 | INFO | Project6 | test schema validated: 41088 rows and 8 columns.
+2026-10-26 11:41:55 | INFO | Project6 | store schema validated: 1115 rows and 10 columns.
+2026-10-26 11:41:55 | INFO | Project6 | sample_submission schema validated: 41088 rows and 2 columns.
+2026-10-26 11:41:55 | INFO | Project6 | train date inspection: unparseable=0, unique_dates=942
+2026-10-26 11:41:55 | INFO | Project6 | test date inspection: unparseable=0, unique_dates=48
+2026-10-26 11:41:55 | INFO | Project6 | Date and categorical-value inspection completed.
+2026-10-26 11:41:55 | INFO | Project6 | Working-copy dates standardized and categorical values inspected.
+2026-10-26 11:41:55 | INFO | Project6 | TRAIN missing-value investigation completed; 0 columns contain missing values.
+2026-10-26 11:41:55 | INFO | Project6 | TEST missing-value investigation completed; 1 columns contain missing values.
+2026-10-26 11:41:55 | INFO | Project6 | STORE missing-value investigation completed; 6 columns contain missing values.
+2026-10-26 11:41:55 | INFO | Project6 | SAMPLE_SUBMISSION missing-value investigation completed; 0 columns contain missing values.
+2026-10-26 11:41:55 | INFO | Project6 | Store metadata missingness investigation completed.
+2026-10-26 11:41:55 | INFO | Project6 | Identified 3 stores with missing CompetitionDistance.
+2026-10-26 11:41:55 | INFO | Project6 | Identified 11 test rows with missing Open status.
+2026-10-26 11:41:55 | INFO | Project6 | Store 622 investigation completed: training rows=942, test rows=48.
+2026-10-26 11:41:55 | INFO | Project6 | Store 622 opening-pattern analysis completed. Historical rows=942; test rows=48; missing test Open=11.
+2026-10-26 11:41:55 | INFO | Project6 | Missing Open investigation completed: 11 records across 1 stores.
+2026-10-26 11:41:55 | INFO | Project6 | Historical evidence check completed for 11 missing Open records.
+2026-10-26 11:41:55 | INFO | Project6 | Merge prerequisites validated successfully.
+2026-10-26 11:41:56 | INFO | Project6 | Training metadata merge completed: 1017209 rows, 18 columns.
+2026-10-26 11:41:56 | INFO | Project6 | Test metadata merge completed: 41088 rows, 17 columns.
+2026-10-26 11:41:56 | INFO | Project6 | All post-merge integrity checks passed.
+2026-10-26 11:42:00 | INFO | Project6 | Final merged datasets exported successfully to d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-26 12:00:53,048 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-26 12:00:53,049 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-26 12:00:53,050 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-26 12:00:53,051 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-26 12:00:53,054 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-26 13:24:32,225 | INFO | Project6_EDA | Both processed dataset files are available.
+2026-10-26 13:26:22,325 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-26 13:26:22,327 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-26 15:34:48,047 | INFO | Project6_EDA | Dataset structure and data type inspection completed.
+2026-10-26 15:37:08,895 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-26 15:37:08,902 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-26 15:37:08,906 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-26 16:06:02,834 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-26 16:06:02,836 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-26 16:51:10,369 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 16:51:10,370 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 16:51:10,371 | INFO | Project6_EDA | IQR analysis for CompetitionDistance: 99160 potential outliers (9.77%)
+2026-10-26 16:51:10,372 | INFO | Project6_EDA | IQR-based outlier investigation completed.
+2026-10-26 17:00:58,516 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-26 17:00:58,518 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-26 17:00:58,519 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-26 17:00:58,521 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-26 17:00:58,523 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-26 17:00:58,546 | INFO | Project6_EDA | Both processed dataset files are available.
+2026-10-26 17:00:59,167 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-26 17:00:59,169 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-26 17:00:59,328 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-26 17:00:59,331 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-26 17:00:59,332 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-26 17:00:59,631 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-26 17:00:59,632 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-26 17:00:59,723 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 17:00:59,724 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 17:00:59,725 | INFO | Project6_EDA | IQR analysis for CompetitionDistance: 99160 potential outliers (9.77%)
+2026-10-26 17:00:59,726 | INFO | Project6_EDA | IQR-based outlier investigation completed.
+2026-10-26 17:17:18,357 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-26 17:17:19,108 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 17:17:19,144 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 19:49:29,452 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 19:49:29,481 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 19:49:29,483 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-26 19:49:29,484 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-26 19:49:30,415 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 19:49:30,452 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 19:50:55,190 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-26 19:50:56,012 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 19:50:56,046 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 19:57:17,420 | INFO | Project6_EDA | Training file verified: D:\Project_6_Rossmann_Forecasting\data\processed\train_merged.csv
+2026-10-26 19:57:17,423 | INFO | Project6_EDA | Test file verified: D:\Project_6_Rossmann_Forecasting\data\processed\test_merged.csv
+2026-10-26 19:57:17,425 | INFO | Project6_EDA | Processed dataset verification completed successfully.
+2026-10-26 20:02:31,985 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-26 20:02:32,823 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 20:02:32,862 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 20:25:03,840 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-26 20:25:03,842 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-26 20:25:03,843 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-26 20:25:03,846 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-26 20:25:03,850 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-26 20:25:03,901 | INFO | Project6_EDA | Training file verified: D:\Project_6_Rossmann_Forecasting\data\processed\train_merged.csv
+2026-10-26 20:25:03,903 | INFO | Project6_EDA | Test file verified: D:\Project_6_Rossmann_Forecasting\data\processed\test_merged.csv
+2026-10-26 20:25:03,905 | INFO | Project6_EDA | Processed dataset verification completed successfully.
+2026-10-26 20:25:04,712 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-26 20:25:04,713 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-26 20:25:04,919 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-26 20:25:04,926 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-26 20:25:04,930 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-26 20:25:05,314 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-26 20:25:05,315 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-26 20:25:05,512 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 20:25:05,513 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 20:25:05,515 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-26 20:25:05,518 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-26 20:25:05,744 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-26 20:25:06,530 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 20:25:06,559 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 20:46:46,361 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-26 20:46:46,362 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-26 20:46:46,365 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-26 20:46:46,367 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-26 20:46:46,371 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-26 20:46:46,433 | INFO | Project6_EDA | Training file verified: D:\Project_6_Rossmann_Forecasting\data\processed\train_merged.csv
+2026-10-26 20:46:46,437 | INFO | Project6_EDA | Test file verified: D:\Project_6_Rossmann_Forecasting\data\processed\test_merged.csv
+2026-10-26 20:46:46,439 | INFO | Project6_EDA | Processed dataset verification completed successfully.
+2026-10-26 20:46:47,143 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-26 20:46:47,145 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-26 20:46:47,358 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-26 20:46:47,364 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-26 20:46:47,365 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-26 20:46:47,687 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-26 20:46:47,688 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-26 20:46:47,851 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 20:46:47,851 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 20:46:47,853 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-26 20:46:47,854 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-26 20:46:48,096 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-26 20:46:48,873 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-26 20:46:48,900 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-26 20:47:15,438 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-26 20:47:15,439 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-26 20:47:15,440 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-26 20:47:15,443 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-26 20:51:49,511 | INFO | Project6_EDA | Promotion distribution analysis completed.
+2026-10-26 20:51:49,514 | INFO | Project6_EDA | Training | No Promotion | count=629129 | percentage=61.85%
+2026-10-26 20:51:49,516 | INFO | Project6_EDA | Training | Promotion | count=388080 | percentage=38.15%
+2026-10-26 20:51:49,519 | INFO | Project6_EDA | Test | No Promotion | count=24824 | percentage=60.42%
+2026-10-26 20:51:49,523 | INFO | Project6_EDA | Test | Promotion | count=16264 | percentage=39.58%
+2026-10-26 21:25:38,816 | INFO | Project6_EDA | Promotion versus sales chart generated.
+2026-10-26 21:25:39,013 | INFO | Project6_EDA | Promotion versus customers chart generated.
+2026-10-26 21:25:39,015 | INFO | Project6_EDA | Promotion mean-sales difference among open stores: 38.77%
+2026-10-26 21:25:39,016 | INFO | Project6_EDA | Promotion mean-customers difference among open stores: 21.18%
+2026-10-27 13:21:59,055 | INFO | Project6_EDA | Holiday-period sales comparison completed.
+2026-10-28 17:57:47,084 | INFO | Project6_EDA | Monthly and seasonal-event sales analysis completed.
+2026-10-28 18:51:56,169 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-28 18:51:56,171 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-28 18:51:56,173 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-28 18:51:56,174 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-28 18:51:56,178 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-28 18:51:56,215 | INFO | Project6_EDA | Training file verified: D:\Project_6_Rossmann_Forecasting\data\processed\train_merged.csv
+2026-10-28 18:51:56,219 | INFO | Project6_EDA | Test file verified: D:\Project_6_Rossmann_Forecasting\data\processed\test_merged.csv
+2026-10-28 18:51:56,220 | INFO | Project6_EDA | Processed dataset verification completed successfully.
+2026-10-28 18:51:56,881 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-28 18:51:56,882 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-28 18:51:57,049 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-28 18:51:57,052 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-28 18:51:57,054 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-28 18:51:57,343 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-28 18:51:57,345 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-28 18:51:57,475 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-28 18:51:57,476 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-28 18:51:57,480 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-28 18:51:57,481 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-28 18:51:57,679 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-28 18:51:58,382 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-28 18:51:58,406 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-28 18:51:58,557 | INFO | Project6_EDA | Promotion distribution analysis completed.
+2026-10-28 18:51:58,558 | INFO | Project6_EDA | Training | No Promotion | count=629129 | percentage=61.85%
+2026-10-28 18:51:58,559 | INFO | Project6_EDA | Training | Promotion | count=388080 | percentage=38.15%
+2026-10-28 18:51:58,561 | INFO | Project6_EDA | Test | No Promotion | count=24824 | percentage=60.42%
+2026-10-28 18:51:58,563 | INFO | Project6_EDA | Test | Promotion | count=16264 | percentage=39.58%
+2026-10-28 18:51:58,974 | INFO | Project6_EDA | Promotion versus sales chart generated.
+2026-10-28 18:51:59,081 | INFO | Project6_EDA | Promotion versus customers chart generated.
+2026-10-28 18:51:59,082 | INFO | Project6_EDA | Promotion mean-sales difference among open stores: 38.77%
+2026-10-28 18:51:59,083 | INFO | Project6_EDA | Promotion mean-customers difference among open stores: 21.18%
+2026-10-28 18:51:59,750 | INFO | Project6_EDA | Holiday-period sales comparison completed.
+2026-10-28 18:52:00,651 | INFO | Project6_EDA | Monthly and seasonal-event sales analysis completed.
+2026-10-28 19:03:27,865 | INFO | Project6_EDA | Holiday sales and store status analyses completed.
+2026-10-28 19:32:32,459 | INFO | Project6_EDA | Holiday sales and store status analyses completed.
+2026-10-28 21:21:16,101 | INFO | Project6_EDA | Holiday sales analysis completed. Valid open-store records: 844392
+2026-10-28 21:21:16,103 | INFO | Project6_EDA | Holiday status analysis completed. Records with known Open status: 1017209
+2026-10-28 22:18:29,572 | INFO | Project6_EDA | Holiday sales analysis completed. Open-store records: 844392
+2026-10-28 22:18:29,573 | INFO | Project6_EDA | Holiday status analysis completed. Known-status records: 1017209
+2026-10-28 22:19:51,805 | INFO | Project6_EDA | Monthly and seasonal-event sales analysis completed.
+2026-10-29 07:52:41,520 | INFO | Project6_EDA | Store-specific holiday analysis completed. Open-store sales records: 844392
+2026-10-29 07:52:41,522 | INFO | Project6_EDA | Holiday operating-status analysis completed. Known-status records: 1017209
+2026-10-29 08:03:39,602 | INFO | Project6_EDA | Monthly and seasonal-event sales analysis completed.
+2026-10-29 08:04:47,840 | INFO | Project6_EDA | EDA notebook initialized.
+2026-10-29 08:04:47,842 | INFO | Project6_EDA | Python version: 3.13.14
+2026-10-29 08:04:47,844 | INFO | Project6_EDA | Pandas version: 3.1.0
+2026-10-29 08:04:47,846 | INFO | Project6_EDA | NumPy version: 2.5.4
+2026-10-29 08:04:47,849 | INFO | Project6_EDA | Project root: D:\Project_6_Rossmann_Forecasting
+2026-10-29 08:04:47,882 | INFO | Project6_EDA | Training file verified: D:\Project_6_Rossmann_Forecasting\data\processed\train_merged.csv
+2026-10-29 08:04:47,886 | INFO | Project6_EDA | Test file verified: D:\Project_6_Rossmann_Forecasting\data\processed\test_merged.csv
+2026-10-29 08:04:47,889 | INFO | Project6_EDA | Processed dataset verification completed successfully.
+2026-10-29 08:04:48,642 | INFO | Project6_EDA | Training dataset loaded successfully: 1017209 rows, 19 columns
+2026-10-29 08:04:48,644 | INFO | Project6_EDA | Test dataset loaded successfully: 41088 rows, 18 columns
+2026-10-29 08:04:48,858 | INFO | Project6_EDA | Test dates follow the training date range.
+2026-10-29 08:04:48,862 | INFO | Project6_EDA | Training date range: 2013-01-01 00:00:00 to 2015-07-31 00:00:00
+2026-10-29 08:04:48,864 | INFO | Project6_EDA | Test date range: 2015-08-01 00:00:00 to 2015-09-17 00:00:00
+2026-10-29 08:04:49,201 | INFO | Project6_EDA | Training dataset contains 2173431 missing cells.
+2026-10-29 08:04:49,202 | INFO | Project6_EDA | Test dataset contains 82235 missing cells.
+2026-10-29 08:04:49,371 | INFO | Project6_EDA | IQR analysis for Sales: 26694 potential outliers (2.62%)
+2026-10-29 08:04:49,372 | INFO | Project6_EDA | IQR analysis for Customers: 38095 potential outliers (3.75%)
+2026-10-29 08:04:49,374 | INFO | Project6_EDA | IQR analysis for CompetitionDistance (Unique Stores): 108 potential outliers (9.71%)
+2026-10-29 08:04:49,375 | INFO | Project6_EDA | Corrected IQR outlier investigation completed.
+2026-10-29 08:04:49,585 | INFO | Project6_EDA | Missing-value percentage bar chart generated.
+2026-10-29 08:04:50,389 | INFO | Project6_EDA | Daily sales boxplot generated.
+2026-10-29 08:04:50,418 | INFO | Project6_EDA | Data quality visualization section completed.
+2026-10-29 08:04:50,607 | INFO | Project6_EDA | Promotion distribution analysis completed.
+2026-10-29 08:04:50,608 | INFO | Project6_EDA | Training | No Promotion | count=629129 | percentage=61.85%
+2026-10-29 08:04:50,609 | INFO | Project6_EDA | Training | Promotion | count=388080 | percentage=38.15%
+2026-10-29 08:04:50,610 | INFO | Project6_EDA | Test | No Promotion | count=24824 | percentage=60.42%
+2026-10-29 08:04:50,611 | INFO | Project6_EDA | Test | Promotion | count=16264 | percentage=39.58%
+2026-10-29 08:04:51,055 | INFO | Project6_EDA | Promotion versus sales chart generated.
+2026-10-29 08:04:51,172 | INFO | Project6_EDA | Promotion versus customers chart generated.
+2026-10-29 08:04:51,172 | INFO | Project6_EDA | Promotion mean-sales difference among open stores: 38.77%
+2026-10-29 08:04:51,173 | INFO | Project6_EDA | Promotion mean-customers difference among open stores: 21.18%
+2026-10-29 08:04:55,081 | INFO | Project6_EDA | Store-specific holiday analysis completed. Open-store sales records: 844392
+2026-10-29 08:04:55,081 | INFO | Project6_EDA | Holiday operating-status analysis completed. Known-status records: 1017209
+2026-10-29 08:04:55,916 | INFO | Project6_EDA | Monthly and seasonal-event sales analysis completed.
+2026-10-29 08:08:51,481 | INFO | Project6_EDA | Promotion versus sales chart generated.
+2026-10-29 08:08:51,648 | INFO | Project6_EDA | Promotion versus customers chart generated.
+2026-10-29 08:08:51,649 | INFO | Project6_EDA | Promotion mean-sales difference among open stores: 38.77%
+2026-10-29 08:08:51,650 | INFO | Project6_EDA | Promotion mean-customers difference among open stores: 21.18%
+2026-10-29 11:01:55,853 | INFO | Project6_EDA | EDA environment setup started.
+2026-10-29 11:01:55,855 | INFO | Project6_EDA | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-29 11:01:55,856 | INFO | Project6_EDA | Processed data directory: d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-29 11:01:55,857 | INFO | Project6_EDA | Log file: d:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-29 11:01:55,860 | INFO | Project6_EDA | EDA environment configuration completed.
+2026-10-29 11:03:19,810 | ERROR | Project6_EDA | Required processed dataset files are missing or empty: ['store.csv']
+2026-10-29 11:04:30,736 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-29 11:07:22,195 | INFO | Project6_EDA | Training dataset loaded: 1017209 rows, 19 columns
+2026-10-29 11:07:22,197 | INFO | Project6_EDA | Test dataset loaded: 41088 rows, 18 columns
+2026-10-29 11:12:55,977 | INFO | Project6_EDA | Section 5 completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-29 11:12:55,980 | INFO | Project6_EDA | Date conversion completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-29 11:16:01,414 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; date ranges overlap: False
+2026-10-29 11:16:01,415 | INFO | Project6_EDA | Calendar gaps: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-29 12:19:21,249 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; overlap: False
+2026-10-29 12:19:21,250 | INFO | Project6_EDA | Missing calendar dates: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-29 12:20:24,344 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-29 12:20:24,461 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-29 12:47:11,940 | INFO | Project6_EDA | Section 5 completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-29 12:47:11,944 | INFO | Project6_EDA | Date conversion completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-29 12:51:04,572 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, open-store customers, and unique-store competition distance where available.
+2026-10-29 12:52:14,265 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, customers and unique-store competition distance where available.
+2026-10-29 12:57:36,385 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-29 13:01:10,265 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-29 13:03:05,245 | INFO | Project6_EDA | Section 10 completed. Promotion distribution analyzed for training and test datasets.
+2026-10-29 13:09:49,802 | INFO | Project6_EDA | Section 12 completed. Open-store records=844392; mean sales difference=38.77%; mean customer difference=21.18%
+2026-10-29 13:27:15,660 | INFO | Project6_EDA | Section 14 completed. Identified 37 unique holiday dates; analyzed 844392 open-store records.
+2026-10-29 13:33:37,413 | INFO | Project6_EDA | Section 16 completed. Monthly trends and seasonal comparisons for Christmas and Easter were generated.
+2026-10-29 14:23:33,526 | INFO | Project6_EDA | Section 16 seasonal analysis completed. Eligible records=844392; unique stores=1115.
+2026-10-29 20:06:29,142 | INFO | Project6_EDA | Section 18 completed. Pearson=0.8236, Spearman=0.8319, eligible_records=844392
+2026-10-29 21:30:48,556 | INFO | Project6_EDA | Section 19 completed: 844392 valid open-store records.
+2026-10-29 21:35:19,265 | INFO | Project6_EDA | Section 20 completed. Eligible records=844392; unique stores=1115.
+2026-10-30 10:04:13,150 | INFO | Project6_EDA | Section 21 completed. Stores analyzed=1112; Pearson=-0.0424; Spearman=-0.0280.
+2026-10-30 10:27:04,899 | INFO | Project6_EDA | Section 22 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-30 10:33:46,105 | INFO | Project6_EDA | Section 23 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-30 10:40:39,223 | INFO | Project6_EDA | Section 24 completed. Records=844392; variables=11.
+2026-10-30 11:15:30,799 | INFO | Project6_EDA | Section 25 completed. Records=844392; StoreTypes=4.
+2026-10-30 11:20:37,878 | INFO | Project6_EDA | Section 26 completed. Records=844392; Holiday conditions=4.
+2026-10-30 11:24:01,947 | INFO | Project6_EDA | Section 26 completed. Records=844392; Holiday conditions=4.
+2026-10-30 11:43:30,777 | INFO | Project6_EDA | Section 27 summary completed. Analysis areas summarized=17.
+2026-10-30 11:45:59,015 | INFO | Project6_EDA | Section 27 summary completed. Analysis areas summarized: 17
+2026-10-30 12:01:15,183 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-30 12:03:06,811 | INFO | Project6_EDA | Training dataset loaded and validated: 1017209 rows, 19 columns
+2026-10-30 12:03:06,812 | INFO | Project6_EDA | Test dataset loaded and validated: 41088 rows, 18 columns
+2026-10-30 12:06:16,445 | INFO | Project6_EDA | Dataset structure analysis completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-30 12:06:16,446 | INFO | Project6_EDA | Date validation completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-30 12:21:24,134 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-30 12:21:24,254 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-30 12:33:09,849 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-30 12:33:09,953 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-30 13:38:57,278 | INFO | Project6_EDA | Section 19 completed: 844392 valid open-store records.
+2026-10-30 13:46:28,122 | INFO | Project6_EDA | Correlation analysis completed. Open-store records: 844392; Variables: 7
+2026-10-30 14:10:10,869 | INFO | Project6_EDA | Section 27 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 14:28:53,285 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-30 20:51:37,654 | INFO | Project6_EDA | Missing-to-Available Competition Distance Analysis completed. Total stores=1115; Transition stores=0.
+2026-10-30 21:41:53,433 | INFO | Project6_EDA | EDA environment setup started.
+2026-10-30 21:41:53,436 | INFO | Project6_EDA | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-30 21:41:53,437 | INFO | Project6_EDA | Processed data directory: d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-30 21:41:53,438 | INFO | Project6_EDA | Log file: d:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-30 21:41:53,450 | INFO | Project6_EDA | EDA environment configuration completed.
+2026-10-30 21:41:53,552 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-30 21:41:54,499 | INFO | Project6_EDA | Training dataset loaded and validated: 1017209 rows, 19 columns
+2026-10-30 21:41:54,501 | INFO | Project6_EDA | Test dataset loaded and validated: 41088 rows, 18 columns
+2026-10-30 21:41:55,957 | INFO | Project6_EDA | Dataset structure analysis completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-30 21:41:55,959 | INFO | Project6_EDA | Date validation completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-30 21:41:56,165 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; overlap: False
+2026-10-30 21:41:56,167 | INFO | Project6_EDA | Missing calendar dates: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-30 21:41:56,989 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-30 21:41:57,090 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-30 21:42:02,197 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, customers and unique-store competition distance where available.
+2026-10-30 21:42:04,662 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-30 21:42:05,145 | INFO | Project6_EDA | Section 10 completed. Promotion distribution analyzed for training and test datasets.
+2026-10-30 21:42:06,251 | INFO | Project6_EDA | Section 12 completed. Open-store records=844392; mean sales difference=38.77%; mean customer difference=21.18%
+2026-10-30 21:42:07,217 | INFO | Project6_EDA | Section 14 completed. Identified 37 unique holiday dates; analyzed 844392 open-store records.
+2026-10-30 21:42:08,517 | INFO | Project6_EDA | Section 16 seasonal analysis completed. Eligible records=844392; unique stores=1115.
+2026-10-30 21:42:09,458 | INFO | Project6_EDA | Section 18 completed. Pearson=0.8236, Spearman=0.8319, eligible_records=844392
+2026-10-30 21:42:10,653 | INFO | Project6_EDA | Section 19 completed: 844392 valid open-store records.
+2026-10-30 21:42:11,703 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-30 21:42:12,946 | INFO | Project6_EDA | Section 20 completed. Eligible records=844392; unique stores=1115.
+2026-10-30 21:42:13,346 | INFO | Project6_EDA | Missing-to-Available Competition Distance Analysis completed. Total stores=1115; Transition stores=0.
+2026-10-30 21:42:14,606 | INFO | Project6_EDA | Section 22 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-30 21:42:15,409 | INFO | Project6_EDA | Section 23 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-30 21:42:17,958 | INFO | Project6_EDA | Correlation analysis completed. Open-store records: 844392; Variables: 7
+2026-10-30 21:42:18,726 | INFO | Project6_EDA | Section 25 completed. Records=844392; StoreTypes=4.
+2026-10-30 21:42:21,467 | INFO | Project6_EDA | Section 26 completed. Records=844392; Holiday conditions=4.
+2026-10-30 21:42:21,523 | INFO | Project6_EDA | Section 27 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 21:49:29,541 | INFO | Project6_EDA | Section 24 completed. Stores=1115, valid_distance_stores=1112, Pearson=-0.0424, Spearman=-0.0280
+2026-10-30 21:58:27,351 | INFO | Project6_EDA | Section 27 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 21:59:56,098 | INFO | Project6_EDA | Section 27 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 22:00:15,314 | INFO | Project6_EDA | Section 27 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 22:00:40,463 | INFO | Project6_EDA | Section 31 summary completed successfully. Analysis areas summarized: 20
+2026-10-30 22:20:51,149 | INFO | Project6_EDA | Section 20 completed: 844392 valid open-store records.
+2026-10-30 22:21:52,454 | INFO | Project6_EDA | Section 23 completed. Eligible records=844392; unique stores=1115.
+2026-10-30 22:22:45,055 | INFO | Project6_EDA | Section 26 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-30 22:23:33,950 | INFO | Project6_EDA | Section 27 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-30 22:24:21,583 | INFO | Project6_EDA | Section 29 completed. Records=844392; StoreTypes=4.
+2026-10-30 22:24:56,332 | INFO | Project6_EDA | Section  completed30. Records=844392; Holiday conditions=4.
+2026-10-30 22:30:49,087 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-30 22:34:11,507 | INFO | Project6_EDA | Section 31 summary completed successfully. Analysis areas summarized: 23
+2026-10-30 22:35:10,130 | INFO | Project6_EDA | EDA environment setup started.
+2026-10-30 22:35:10,131 | INFO | Project6_EDA | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-30 22:35:10,133 | INFO | Project6_EDA | Processed data directory: d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-30 22:35:10,133 | INFO | Project6_EDA | Log file: d:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-30 22:35:10,135 | INFO | Project6_EDA | EDA environment configuration completed.
+2026-10-30 22:35:10,160 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-30 22:35:10,798 | INFO | Project6_EDA | Training dataset loaded and validated: 1017209 rows, 19 columns
+2026-10-30 22:35:10,799 | INFO | Project6_EDA | Test dataset loaded and validated: 41088 rows, 18 columns
+2026-10-30 22:35:11,803 | INFO | Project6_EDA | Dataset structure analysis completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-30 22:35:11,804 | INFO | Project6_EDA | Date validation completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-30 22:35:11,881 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; overlap: False
+2026-10-30 22:35:11,882 | INFO | Project6_EDA | Missing calendar dates: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-30 22:35:12,494 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-30 22:35:12,578 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-30 22:35:14,983 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, customers and unique-store competition distance where available.
+2026-10-30 22:35:16,835 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-30 22:35:17,224 | INFO | Project6_EDA | Section 10 completed. Promotion distribution analyzed for training and test datasets.
+2026-10-30 22:35:17,990 | INFO | Project6_EDA | Section 12 completed. Open-store records=844392; mean sales difference=38.77%; mean customer difference=21.18%
+2026-10-30 22:35:18,791 | INFO | Project6_EDA | Section 14 completed. Identified 37 unique holiday dates; analyzed 844392 open-store records.
+2026-10-30 22:35:19,816 | INFO | Project6_EDA | Section 16 seasonal analysis completed. Eligible records=844392; unique stores=1115.
+2026-10-30 22:35:20,590 | INFO | Project6_EDA | Section 18 completed. Pearson=0.8236, Spearman=0.8319, eligible_records=844392
+2026-10-30 22:35:21,836 | INFO | Project6_EDA | Section 20 completed: 844392 valid open-store records.
+2026-10-30 22:35:22,413 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-30 22:35:23,420 | INFO | Project6_EDA | Section 23 completed. Eligible records=844392; unique stores=1115.
+2026-10-30 22:35:23,792 | INFO | Project6_EDA | Section 24 completed. Stores=1115, valid_distance_stores=1112, Pearson=-0.0424, Spearman=-0.0280
+2026-10-30 22:35:24,040 | INFO | Project6_EDA | Missing-to-Available Competition Distance Analysis completed. Total stores=1115; Transition stores=0.
+2026-10-30 22:35:24,876 | INFO | Project6_EDA | Section 26 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-30 22:35:25,444 | INFO | Project6_EDA | Section 27 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-30 22:35:27,523 | INFO | Project6_EDA | Correlation analysis completed. Open-store records: 844392; Variables: 7
+2026-10-30 22:35:28,110 | INFO | Project6_EDA | Section 29 completed. Records=844392; StoreTypes=4.
+2026-10-30 22:35:30,284 | INFO | Project6_EDA | Section  completed30. Records=844392; Holiday conditions=4.
+2026-10-30 22:35:30,314 | INFO | Project6_EDA | Section 31 summary completed successfully. Analysis areas summarized: 23
+2026-10-30 22:41:44,515 | INFO | Project6_EDA | Section 30 completed. Records=844392; Holiday conditions=4.
+2026-10-30 22:47:35,689 | INFO | Project6_EDA | Missing Open investigation completed for Store 622. Missing records=11; Historical records=942
+2026-10-30 22:48:06,732 | INFO | Project6_EDA | EDA environment setup started.
+2026-10-30 22:48:06,734 | INFO | Project6_EDA | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-30 22:48:06,734 | INFO | Project6_EDA | Processed data directory: d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-30 22:48:06,735 | INFO | Project6_EDA | Log file: d:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-30 22:48:06,737 | INFO | Project6_EDA | EDA environment configuration completed.
+2026-10-30 22:48:06,759 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-30 22:48:07,373 | INFO | Project6_EDA | Training dataset loaded and validated: 1017209 rows, 19 columns
+2026-10-30 22:48:07,374 | INFO | Project6_EDA | Test dataset loaded and validated: 41088 rows, 18 columns
+2026-10-30 22:48:08,423 | INFO | Project6_EDA | Dataset structure analysis completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-30 22:48:08,424 | INFO | Project6_EDA | Date validation completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-30 22:48:08,507 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; overlap: False
+2026-10-30 22:48:08,507 | INFO | Project6_EDA | Missing calendar dates: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-30 22:48:09,138 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-30 22:48:09,223 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-30 22:48:09,354 | INFO | Project6_EDA | Missing Open investigation completed for Store 622. Missing records=11; Historical records=942
+2026-10-30 22:48:11,726 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, customers and unique-store competition distance where available.
+2026-10-30 22:48:13,487 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-30 22:48:13,819 | INFO | Project6_EDA | Section 10 completed. Promotion distribution analyzed for training and test datasets.
+2026-10-30 22:48:14,551 | INFO | Project6_EDA | Section 12 completed. Open-store records=844392; mean sales difference=38.77%; mean customer difference=21.18%
+2026-10-30 22:48:15,205 | INFO | Project6_EDA | Section 14 completed. Identified 37 unique holiday dates; analyzed 844392 open-store records.
+2026-10-30 22:48:16,524 | INFO | Project6_EDA | Section 16 seasonal analysis completed. Eligible records=844392; unique stores=1115.
+2026-10-30 22:48:17,227 | INFO | Project6_EDA | Section 18 completed. Pearson=0.8236, Spearman=0.8319, eligible_records=844392
+2026-10-30 22:48:18,069 | INFO | Project6_EDA | Section 20 completed: 844392 valid open-store records.
+2026-10-30 22:48:18,633 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-30 22:48:19,572 | INFO | Project6_EDA | Section 23 completed. Eligible records=844392; unique stores=1115.
+2026-10-30 22:48:19,949 | INFO | Project6_EDA | Section 24 completed. Stores=1115, valid_distance_stores=1112, Pearson=-0.0424, Spearman=-0.0280
+2026-10-30 22:48:20,205 | INFO | Project6_EDA | Missing-to-Available Competition Distance Analysis completed. Total stores=1115; Transition stores=0.
+2026-10-30 22:48:21,051 | INFO | Project6_EDA | Section 26 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-30 22:48:21,580 | INFO | Project6_EDA | Section 27 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-30 22:48:24,041 | INFO | Project6_EDA | Correlation analysis completed. Open-store records: 844392; Variables: 7
+2026-10-30 22:48:24,723 | INFO | Project6_EDA | Section 29 completed. Records=844392; StoreTypes=4.
+2026-10-30 22:48:26,933 | INFO | Project6_EDA | Section 30 completed. Records=844392; Holiday conditions=4.
+2026-10-30 22:53:45,773 | INFO | Project6_EDA | Section 31 summary completed successfully. Analysis areas summarized: 24
+2026-10-31 09:23:05,462 | INFO | Project6_EDA | EDA environment setup started.
+2026-10-31 09:23:05,464 | INFO | Project6_EDA | Project root: d:\Project_6_Rossmann_Forecasting
+2026-10-31 09:23:05,465 | INFO | Project6_EDA | Processed data directory: d:\Project_6_Rossmann_Forecasting\data\processed
+2026-10-31 09:23:05,466 | INFO | Project6_EDA | Log file: d:\Project_6_Rossmann_Forecasting\logs\project6.log
+2026-10-31 09:23:05,469 | INFO | Project6_EDA | EDA environment configuration completed.
+2026-10-31 09:23:05,503 | INFO | Project6_EDA | Training and test CSV files verified successfully.
+2026-10-31 09:23:06,307 | INFO | Project6_EDA | Training dataset loaded and validated: 1017209 rows, 19 columns
+2026-10-31 09:23:06,309 | INFO | Project6_EDA | Test dataset loaded and validated: 41088 rows, 18 columns
+2026-10-31 09:23:07,518 | INFO | Project6_EDA | Dataset structure analysis completed. Training shape: (1017209, 19); Test shape: (41088, 18)
+2026-10-31 09:23:07,519 | INFO | Project6_EDA | Date validation completed. Training invalid dates: 0; Test invalid dates: 0
+2026-10-31 09:23:07,624 | INFO | Project6_EDA | Section 6 completed. Training period: 2013-01-01 to 2015-07-31; Test period: 2015-08-01 to 2015-09-17; overlap: False
+2026-10-31 09:23:07,626 | INFO | Project6_EDA | Missing calendar dates: Training=0, Test=0. DayOfWeek mismatches: Training=0, Test=0
+2026-10-31 09:23:08,379 | INFO | Project6_EDA | Section 7 completed. Training missing cells: 2173431; Test missing cells: 82235
+2026-10-31 09:23:08,498 | INFO | Project6_EDA | Columns containing missing values: Training=6; Test=7
+2026-10-31 09:23:08,645 | INFO | Project6_EDA | Missing Open investigation completed for Store 622. Missing records=11; Historical records=942
+2026-10-31 09:23:11,593 | INFO | Project6_EDA | Section 8 completed. IQR outlier analysis performed for open-store sales, customers and unique-store competition distance where available.
+2026-10-31 09:23:13,658 | INFO | Project6_EDA | Section 9 completed. Training missing cells=2173431; Test missing cells=82235; Training exact duplicates=0; Test exact duplicates=0
+2026-10-31 09:23:14,094 | INFO | Project6_EDA | Section 10 completed. Promotion distribution analyzed for training and test datasets.
+2026-10-31 09:23:15,549 | INFO | Project6_EDA | Section 12 completed. Open-store records=844392; mean sales difference=38.77%; mean customer difference=21.18%
+2026-10-31 09:23:16,355 | INFO | Project6_EDA | Section 14 completed. Identified 37 unique holiday dates; analyzed 844392 open-store records.
+2026-10-31 09:23:17,579 | INFO | Project6_EDA | Section 16 seasonal analysis completed. Eligible records=844392; unique stores=1115.
+2026-10-31 09:23:18,412 | INFO | Project6_EDA | Section 18 completed. Pearson=0.8236, Spearman=0.8319, eligible_records=844392
+2026-10-31 09:23:19,440 | INFO | Project6_EDA | Section 20 completed: 844392 valid open-store records.
+2026-10-31 09:23:20,131 | INFO | Project6_EDA | All-weekday-open store analysis completed. Stores evaluated=1115.
+2026-10-31 09:23:21,297 | INFO | Project6_EDA | Section 23 completed. Eligible records=844392; unique stores=1115.
+2026-10-31 09:23:21,731 | INFO | Project6_EDA | Section 24 completed. Stores=1115, valid_distance_stores=1112, Pearson=-0.0424, Spearman=-0.0280
+2026-10-31 09:23:21,991 | INFO | Project6_EDA | Missing-to-Available Competition Distance Analysis completed. Total stores=1115; Transition stores=0.
+2026-10-31 09:23:22,966 | INFO | Project6_EDA | Section 26 completed. Paired stores=188; sales change=-4.41%; customer change=-4.92%.
+2026-10-31 09:23:23,615 | INFO | Project6_EDA | Section 27 completed. Paired stores=1115; mean sales uplift=41.43%; mean customer uplift=23.84%.
+2026-10-31 09:23:26,166 | INFO | Project6_EDA | Correlation analysis completed. Open-store records: 844392; Variables: 7
+2026-10-31 09:23:26,940 | INFO | Project6_EDA | Section 29 completed. Records=844392; StoreTypes=4.
+2026-10-31 09:23:29,484 | INFO | Project6_EDA | Section 30 completed. Records=844392; Holiday conditions=4.
+2026-10-31 09:23:29,518 | INFO | Project6_EDA | Section 31 summary completed successfully. Analysis areas summarized: 24

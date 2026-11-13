@@ -1,0 +1,8 @@
+Store,Date,Forecast_Day,Predicted_Sales,Lower_Bound,Upper_Bound,Open,Customers_Prediction,Customer_Prediction_Status,Predicted_Customers
+1,2015-09-18,1,4291.371504962444,2917.888471388817,5664.854538536072,1,,Not available - no trained customer model,460
+1,2015-09-19,2,85.92725157737732,0.0,1459.4102851510047,1,,Not available - no trained customer model,0
+1,2015-09-20,3,4294.811595439911,2921.3285618662835,5668.294629013539,1,,Not available - no trained customer model,464
+1,2015-09-21,4,4970.836111485958,3597.3530779123307,6344.319145059586,1,,Not available - no trained customer model,481
+1,2015-09-22,5,5077.407367944717,3703.92433437109,6450.890401518345,1,,Not available - no trained customer model,474
+1,2015-09-23,6,0.0,0.0,0.0,0,,Not available - no trained customer model,0
+1,2015-09-24,7,0.0,0.0,0.0,0,,Not available - no trained customer model,0

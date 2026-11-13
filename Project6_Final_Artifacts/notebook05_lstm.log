@@ -1,0 +1,80 @@
+2026-11-05 22:40:23,257 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-05 22:47:20,226 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-05 22:53:44,038 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-05 22:53:52,595 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-05 23:30:35,873 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-06 17:10:04,745 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-06 19:41:39,629 | INFO | Project6_LSTM | Section 4 completed successfully. Continuous segments: 1295; Stationary: 1292; Non-stationary: 3.
+2026-11-06 19:44:37,110 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1292; Differenced segments: 3; ACF/PACF segments: 1295.
+2026-11-06 19:55:47,922 | INFO | Project6_LSTM | Section 4 completed successfully. Continuous segments: 1295; Stationary: 1292; Non-stationary: 3.
+2026-11-06 21:06:37,206 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-06 21:13:01,119 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-06 21:13:28,317 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-06 21:13:29,863 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-06 21:13:32,677 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-06 21:13:35,286 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-06 21:13:44,867 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-06 21:34:16,067 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-06 21:40:41,999 | INFO | Project6_LSTM | Section 7 completed successfully. Best epoch: 11; Best validation MSE: 0.004532; Training duration: 241.66 seconds.
+2026-11-06 21:58:57,527 | INFO | Project6_LSTM | Section 8 completed successfully. MAE: 981.04; RMSE: 1294.80; RMSPE: 21.67%.
+2026-11-06 22:28:06,989 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Forecast dates: 48; Total forecast rows: 41088; Business horizon: 42 days.
+2026-11-07 11:06:41,972 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 11:06:45,298 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 11:06:51,015 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 11:06:58,429 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:07:20,422 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:07:30,693 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 11:12:55,900 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 11:12:57,443 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 11:13:00,427 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 11:13:03,119 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:13:11,146 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:13:14,335 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 11:18:28,295 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 11:18:29,464 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 11:18:31,513 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 11:18:33,671 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:18:40,943 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:18:43,952 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 11:25:26,105 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 11:25:46,601 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 11:26:12,931 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 11:26:31,321 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:27:03,208 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:27:28,353 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 11:30:58,787 | INFO | Project6_LSTM | Section 7 completed successfully. Best epoch: 11; Best validation MSE: 0.004532; Training duration: 196.18 seconds.
+2026-11-07 11:31:28,370 | INFO | Project6_LSTM | Section 8 completed successfully. MAE: 981.04; RMSE: 1294.80; RMSPE: 21.67%.
+2026-11-07 11:32:41,552 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Forecast dates: 48; Total forecast rows: 41088; Business horizon: 42 days.
+2026-11-07 11:51:05,366 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:56:25,530 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:58:43,433 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 11:58:44,704 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 11:58:46,507 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 11:58:48,912 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 11:59:10,439 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 11:59:19,136 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 12:05:25,768 | INFO | Project6_LSTM | Section 7 completed successfully. Best epoch: 11; Best validation MSE: 0.004532; Training duration: 364.68 seconds.
+2026-11-07 12:05:29,217 | INFO | Project6_LSTM | Section 8 completed successfully. MAE: 981.04; RMSE: 1294.80; RMSPE: 21.67%.
+2026-11-07 12:06:04,411 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Forecast dates: 48; Total forecast rows: 41088; Business horizon: 42 days.
+2026-11-07 12:37:59,607 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Forecast dates: 48; Total forecast rows: 41088; Business horizon: 42 days.
+2026-11-07 12:47:50,938 | INFO | Project6_LSTM | Section 8 completed successfully. MAE: 981.04; RMSE: 1294.80; RMSPE: 21.67%.
+2026-11-07 12:48:40,331 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-07 12:48:41,893 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-07 12:48:44,790 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-07 12:48:48,138 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-07 12:48:59,168 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-07 12:49:03,083 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-07 12:57:35,322 | INFO | Project6_LSTM | Section 7 completed successfully. Best epoch: 11; Best validation MSE: 0.004532; Training duration: 508.27 seconds.
+2026-11-07 13:02:39,339 | INFO | Project6_LSTM | Section 8 completed successfully. MAE=907.25, RMSE=1257.80, MAPE=16.29%, RMSPE=21.59%.
+2026-11-07 13:03:47,962 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Dates: 48; Forecast rows: 41088.
+2026-11-07 13:04:35,951 | INFO | Project6_LSTM | Section 10 completed successfully. Observed interval coverage: 89.13%.
+2026-11-08 14:57:47,422 | INFO | Project6_LSTM | Section 1 completed successfully. Libraries, project paths, datasets and directories verified.
+2026-11-08 14:57:49,575 | INFO | Project6_LSTM | Section 2 completed successfully. Training rows: 1,017,209; Test rows: 41,088; Training stores: 1115; Test stores: 856.
+2026-11-08 14:57:52,210 | INFO | Project6_LSTM | Section 3 completed successfully. Training stores: 1115; Test stores: 856; Common stores: 856.
+2026-11-08 14:57:55,478 | INFO | Project6_LSTM | Section 4 completed successfully. Training observations: 970379; Continuous segments: 1295; Stationary: 1293; Non-stationary: 2.
+2026-11-08 14:58:04,905 | INFO | Project6_LSTM | Section 5 completed successfully. Unchanged segments: 1293; Differenced segments: 2; ACF/PACF segments: 1295.
+2026-11-08 14:58:08,522 | INFO | Project6_LSTM | Section 6 completed successfully. Training windows: 915987; Validation windows: 46830; Lookback: 42 days.
+2026-11-08 15:06:56,264 | INFO | Project6_LSTM | Section 7 completed successfully. Best epoch: 11; Best validation MSE: 0.004532; Training duration: 518.13 seconds.
+2026-11-08 15:07:56,523 | INFO | Project6_LSTM | Section 8 completed successfully. MAE=907.25, RMSE=1257.80, MAPE=16.29%, RMSPE=21.59%.
+2026-11-08 15:09:29,023 | INFO | Project6_LSTM | Section 9 completed successfully. Stores: 856; Dates: 48; Forecast rows: 41088.
+2026-11-08 15:09:41,977 | INFO | Project6_LSTM | Section 10 completed successfully. Observed interval coverage: 89.13%.

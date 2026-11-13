@@ -1,0 +1,101 @@
+{
+    "project": "Sales Forecasting Across Multiple Retail Stores",
+    "notebook": "04_machine_learning_modeling_evaluation",
+    "model_version": "RandomForest_FullTraining_05-11-2026-21-49-07-00",
+    "created_at": "2026-11-05T21:49:07",
+    "model_type": "RandomForestRegressor",
+    "model_stage": "Full-training model candidate",
+    "target_variable": "Sales",
+    "training_rows": 970379,
+    "validation_rows": 46830,
+    "test_rows": 41088,
+    "processed_feature_count": 1149,
+    "parameters": {
+        "n_estimators": 60,
+        "max_depth": 18,
+        "min_samples_split": 20,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "max_samples": 0.8,
+        "criterion": "squared_error",
+        "random_state": 42,
+        "n_jobs": 2
+    },
+    "training_split": "Chronological training period only",
+    "bootstrap_sample_fraction_per_tree": 0.8,
+    "validation_metrics": {
+        "MAE": 1743.016013294823,
+        "RMSE": 2367.111031217721,
+        "RMSPE_Percent": 41.540423212073804
+    },
+    "full_training_dummy_validation_metrics": {
+        "MAE": 2757.646159115901,
+        "RMSE": 3733.8283447343483,
+        "RMSPE_Percent": 45.77515104246874
+    },
+    "pilot_validation_metrics": {
+        "MAE": 1898.0759952066767,
+        "RMSE": 2570.8308150833805,
+        "RMSPE_Percent": 42.3913288998378
+    },
+    "relative_error_reduction_vs_full_training_dummy_percent": {
+        "MAE": 36.793340670884604,
+        "RMSE": 36.60364610612182,
+        "RMSPE_Percent": 9.251149879256742
+    },
+    "relative_error_reduction_vs_pilot_dummy_percent": {
+        "MAE": 36.80422097009261,
+        "RMSE": 36.616247086263456,
+        "RMSPE_Percent": 9.08799458939474
+    },
+    "full_training_dummy_strategy": "Section 4 DummyRegressor(strategy='mean') fitted on all training rows; reused without refitting",
+    "training_criterion": "squared_error",
+    "primary_validation_selection_metric": "RMSPE on positive actual Sales rows",
+    "secondary_validation_metrics": [
+        "MAE",
+        "RMSE"
+    ],
+    "feature_importance_method": "Mean Decrease in Impurity",
+    "prediction_interval_method": "5th and 95th percentiles of individual tree predictions",
+    "prediction_interval_overall_coverage_percent": 63.47853939782191,
+    "prediction_interval_nominal_coverage_percent": 90.0,
+    "prediction_interval_status": "Empirical interval; calibration not guaranteed",
+    "validation_selection_note": "The validation set was previously used for hyperparameter selection; these metrics should not be interpreted as an independent final estimate.",
+    "preprocessor_source": "Notebook 03 fitted preprocessor.joblib",
+    "preprocessing_fitted_on": "X_train only",
+    "source_metadata_audit_passed": true,
+    "source_metadata_discrepancies": [],
+    "source_metadata_audit_details": {
+        "train_rows": {
+            "saved_value": 970379,
+            "verified_value_from_artifacts": 970379,
+            "matched": true
+        },
+        "validation_rows": {
+            "saved_value": 46830,
+            "verified_value_from_artifacts": 46830,
+            "matched": true
+        },
+        "test_rows": {
+            "saved_value": 41088,
+            "verified_value_from_artifacts": 41088,
+            "matched": true
+        },
+        "processed_feature_count": {
+            "saved_value": 1149,
+            "verified_value_from_artifacts": 1149,
+            "matched": true
+        },
+        "target_variable": {
+            "saved_value": "Sales",
+            "verified_value_from_artifacts": "Sales",
+            "matched": true
+        },
+        "preprocessing_fitted_on": {
+            "saved_value": "X_train only",
+            "verified_expected_value": "X_train only",
+            "matched": true
+        }
+    }
+}

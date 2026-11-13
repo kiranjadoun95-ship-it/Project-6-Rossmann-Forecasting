@@ -1,0 +1,126 @@
+{
+    "project_name": "Sales Forecasting Across Multiple Retail Stores",
+    "notebook": "04_machine_learning_modeling_evaluation",
+    "model_version": "RandomForest_05-11-2026-17-11-55-00",
+    "created_at": "2026-11-05T17:11:55",
+    "model_type": "RandomForestRegressor",
+    "model_stage": "Tuned pilot model - not full-training production model",
+    "target_variable": "Sales",
+    "selected_model_name": "RF_More_Trees",
+    "selection_metric": "RMSPE_Percent",
+    "selected_hyperparameters": {
+        "n_estimators": 60,
+        "max_depth": 18,
+        "min_samples_split": 20,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "max_samples": 0.8,
+        "criterion": "squared_error",
+        "random_state": 42,
+        "n_jobs": 2
+    },
+    "training_rows": 60000,
+    "validation_rows": 46830,
+    "processed_feature_count": 1149,
+    "validation_metrics": {
+        "MAE": 1898.0759952066767,
+        "RMSE": 2570.8308150833805,
+        "RMSPE_Percent": 42.3913288998378
+    },
+    "baseline_comparison": {
+        "pilot_dummy_MAE": 2758.120937903054,
+        "pilot_dummy_RMSE": 3734.57064689636,
+        "pilot_dummy_RMSPE_Percent": 45.69300063776609
+    },
+    "feature_importance_method": "Mean Decrease in Impurity (MDI)",
+    "top_10_original_features": [
+        {
+            "Original_Feature": "Open",
+            "Importance_Percent": 23.3093554647
+        },
+        {
+            "Original_Feature": "DayOfWeek",
+            "Importance_Percent": 21.0782816408
+        },
+        {
+            "Original_Feature": "IsWeekend",
+            "Importance_Percent": 12.4656328073
+        },
+        {
+            "Original_Feature": "Promo",
+            "Importance_Percent": 11.751107739
+        },
+        {
+            "Original_Feature": "Store",
+            "Importance_Percent": 11.3250802303
+        },
+        {
+            "Original_Feature": "StateHoliday",
+            "Importance_Percent": 9.0329353293
+        },
+        {
+            "Original_Feature": "DaysUntilHoliday",
+            "Importance_Percent": 1.8797868471
+        },
+        {
+            "Original_Feature": "StoreType",
+            "Importance_Percent": 1.6616416552
+        },
+        {
+            "Original_Feature": "Assortment",
+            "Importance_Percent": 1.1140530657
+        },
+        {
+            "Original_Feature": "WeekOfYear",
+            "Importance_Percent": 1.0576958622
+        }
+    ],
+    "prediction_interval_method": "Empirical quantiles of individual tree predictions",
+    "prediction_interval_nominal_coverage": 90.0,
+    "prediction_interval_validation_results": [
+        {
+            "Segment": "All Validation",
+            "Observations": 46830,
+            "Covered_Observations": 29698,
+            "Coverage_Percent": 63.4166132821,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3849.8442326853,
+            "Median_Interval_Width": 3295.3486110983
+        },
+        {
+            "Segment": "Positive Sales",
+            "Observations": 40282,
+            "Covered_Observations": 23150,
+            "Coverage_Percent": 57.4698376446,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3499.2261132578,
+            "Median_Interval_Width": 3120.0157843921
+        },
+        {
+            "Segment": "Zero Sales",
+            "Observations": 6548,
+            "Covered_Observations": 6548,
+            "Coverage_Percent": 100.0,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 6006.7775080028,
+            "Median_Interval_Width": 5721.8754119093
+        }
+    ],
+    "prediction_interval_status": "Not calibrated to nominal 90 percent coverage",
+    "prediction_interval_warning": "Observed overall validation coverage was below the nominal 90 percent level. These empirical tree-spread bounds must not be represented as guaranteed 90 percent confidence intervals.",
+    "preprocessing": {
+        "preprocessor_source": "Notebook 03 fitted preprocessor.joblib",
+        "fitted_on": "X_train only",
+        "preprocessor_included_in_model_bundle": true
+    },
+    "inference_workflow": [
+        "Receive raw input data with the required original feature columns.",
+        "Apply the saved fitted preprocessor using transform().",
+        "Pass the processed sparse matrix to model_pipeline.predict()."
+    ],
+    "test_data_used_for_model_selection": false,
+    "customer_forecast_status": "Not included. A separate Customers prediction model is required to satisfy the dashboard requirement for both Sales and Customers.",
+    "source_metadata_discrepancies": [],
+    "model_file": "D:\\Project_6_Rossmann_Forecasting\\models\\machine_learning\\RandomForest_05-11-2026-17-11-55-00.pkl"
+}

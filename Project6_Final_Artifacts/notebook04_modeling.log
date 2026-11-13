@@ -1,0 +1,63 @@
+2026-11-05 11:30:38,430 | INFO | Project6_ML_Modeling | Notebook 04 Section 1 completed successfully. Environment and nine Notebook 03 artifacts verified.
+2026-11-05 11:35:06,433 | INFO | Project6_ML_Modeling | Section 2 started: Loading Notebook 03 artifacts.
+2026-11-05 11:43:31,746 | INFO | Project6_ML_Modeling | Section 2 started: loading Notebook 03 artifacts.
+2026-11-05 11:43:32,483 | WARNING | Project6_ML_Modeling | Saved modeling_metadata.json contains discrepancies in: ['train_rows', 'preprocessing_fitted_on']. The source JSON was preserved. A corrected in-memory metadata copy is being used for Notebook 04.
+2026-11-05 11:43:32,487 | INFO | Project6_ML_Modeling | Section 2 completed. All model-input artifacts passed core validation. Metadata audit passed: False.
+2026-11-05 11:47:38,381 | INFO | Project6_ML_Modeling | Section 3 started: data integrity validation.
+2026-11-05 11:47:38,499 | INFO | Project6_ML_Modeling | Section 3 completed successfully. Target distribution, feature leakage and available chronological metadata were checked.
+2026-11-05 11:50:47,970 | INFO | Project6_ML_Modeling | Section 4 started: building DummyRegressor baseline.
+2026-11-05 11:50:48,267 | INFO | Project6_ML_Modeling | DummyRegressor baseline fitted successfully.
+2026-11-05 11:50:48,370 | INFO | Project6_ML_Modeling | Section 4 completed successfully. DummyRegressor baseline metrics were calculated and saved.
+2026-11-05 11:56:38,156 | INFO | Project6_ML_Modeling | Section 5 started: developing Random Forest pilot model.
+2026-11-05 11:56:39,282 | INFO | Project6_ML_Modeling | Random Forest pilot model fitted successfully.
+2026-11-05 11:56:40,392 | INFO | Project6_ML_Modeling | Section 5 completed successfully. Random Forest pilot predictions, evaluation table and diagnostic graphs were generated.
+2026-11-05 12:01:11,694 | INFO | Project6_ML_Modeling | Section 6 started: formal validation model comparison.
+2026-11-05 12:01:12,814 | INFO | Project6_ML_Modeling | Section 6 completed successfully. Model comparison, relative improvement tables and charts were generated.
+2026-11-05 12:08:44,898 | INFO | Project6_ML_Modeling | Section 6 started: formal model comparison.
+2026-11-05 12:08:45,959 | INFO | Project6_ML_Modeling | Section 6 completed successfully. Comparison tables, relative improvements and four colorful graphs were saved.
+2026-11-05 12:12:54,389 | INFO | Project6_ML_Modeling | Section 7 started: Random Forest hyperparameter tuning.
+2026-11-05 12:12:58,744 | INFO | Project6_ML_Modeling | Section 7 completed successfully. The best Random Forest pilot configuration was selected using validation RMSPE.
+2026-11-05 12:22:02,029 | INFO | Project6_ML_Modeling | Section 8 started: Random Forest feature importance analysis.
+2026-11-05 12:22:03,327 | INFO | Project6_ML_Modeling | Section 8 completed successfully. Processed and original feature importance tables and visualizations were generated.
+2026-11-05 12:48:04,796 | INFO | Project6_ML_Modeling | Section 9 started: estimating Random Forest prediction intervals.
+2026-11-05 12:48:06,513 | INFO | Project6_ML_Modeling | Section 9 completed successfully. Empirical prediction intervals, validation coverage and diagnostic visualizations were generated.
+2026-11-05 12:59:33,314 | INFO | Project6_ML_Modeling | Section 10 started: timestamped model serialization.
+2026-11-05 12:59:33,447 | INFO | Project6_ML_Modeling | Section 10 completed successfully. Timestamped model bundle, metadata and version registry were saved and verified.
+2026-11-05 13:10:40,539 | INFO | Project6_ML_Modeling | Section 11 started: final model development summary and audit.
+2026-11-05 13:10:41,311 | INFO | Project6_ML_Modeling | Section 11 completed successfully. Final model summary, metrics, feature importance, prediction interval assessment, serialization verification and final reports were saved.
+2026-11-05 13:31:00,935 | INFO | Project6_ML_Modeling | Section 12 started: final full-training model refit.
+2026-11-05 13:31:53,301 | INFO | Project6_ML_Modeling | Full-training Random Forest fit completed.
+2026-11-05 13:31:55,271 | INFO | Project6_ML_Modeling | Section 12 completed successfully. Full-training Random Forest model fitted, evaluated, serialized and verified.
+2026-11-05 17:11:43,647 | INFO | Project6_ML_Modeling | Notebook 04 Section 1 completed successfully. Environment and nine Notebook 03 artifacts verified.
+2026-11-05 17:11:43,710 | INFO | Project6_ML_Modeling | Section 2 started: loading Notebook 03 artifacts.
+2026-11-05 17:11:44,579 | INFO | Project6_ML_Modeling | Saved modeling metadata matches the loaded artifacts.
+2026-11-05 17:11:44,583 | INFO | Project6_ML_Modeling | Section 2 completed. All model-input artifacts passed core validation. Metadata audit passed: True.
+2026-11-05 17:11:44,631 | INFO | Project6_ML_Modeling | Section 3 started: data integrity validation.
+2026-11-05 17:11:44,755 | INFO | Project6_ML_Modeling | Section 3 completed successfully. Target distribution, feature leakage and available chronological metadata were checked.
+2026-11-05 17:11:44,789 | INFO | Project6_ML_Modeling | Section 4 started: building DummyRegressor baseline.
+2026-11-05 17:11:44,801 | INFO | Project6_ML_Modeling | DummyRegressor baseline fitted successfully.
+2026-11-05 17:11:44,859 | INFO | Project6_ML_Modeling | Section 4 completed successfully. DummyRegressor baseline metrics were calculated and saved.
+2026-11-05 17:11:44,920 | INFO | Project6_ML_Modeling | Section 5 started: developing Random Forest pilot model.
+2026-11-05 17:11:45,673 | INFO | Project6_ML_Modeling | Random Forest pilot model fitted successfully.
+2026-11-05 17:11:46,465 | INFO | Project6_ML_Modeling | Section 5 completed successfully. Random Forest pilot predictions, evaluation table and diagnostic graphs were generated.
+2026-11-05 17:11:46,528 | INFO | Project6_ML_Modeling | Section 6 started: formal model comparison.
+2026-11-05 17:11:47,516 | INFO | Project6_ML_Modeling | Section 6 completed successfully. Comparison tables, relative improvements and four colorful graphs were saved.
+2026-11-05 17:11:47,579 | INFO | Project6_ML_Modeling | Section 7 started: Random Forest hyperparameter tuning.
+2026-11-05 17:11:52,226 | INFO | Project6_ML_Modeling | Section 7 completed successfully. The best Random Forest pilot configuration was selected using validation RMSPE.
+2026-11-05 17:11:52,290 | INFO | Project6_ML_Modeling | Section 8 started: Random Forest feature importance analysis.
+2026-11-05 17:11:53,384 | INFO | Project6_ML_Modeling | Section 8 completed successfully. Processed and original feature importance tables and visualizations were generated.
+2026-11-05 17:11:53,533 | INFO | Project6_ML_Modeling | Section 9 started: estimating Random Forest prediction intervals.
+2026-11-05 17:11:55,253 | INFO | Project6_ML_Modeling | Section 9 completed successfully. Empirical prediction intervals, validation coverage and diagnostic visualizations were generated.
+2026-11-05 17:11:55,297 | INFO | Project6_ML_Modeling | Section 10 started: timestamped model serialization.
+2026-11-05 17:11:55,427 | INFO | Project6_ML_Modeling | Section 10 completed successfully. Timestamped model bundle, metadata and version registry were saved and verified.
+2026-11-05 17:11:55,549 | INFO | Project6_ML_Modeling | Section 11 started: final model development summary and audit.
+2026-11-05 17:11:56,178 | INFO | Project6_ML_Modeling | Section 11 completed successfully. Final model summary, metrics, feature importance, prediction interval assessment, serialization verification and final reports were saved.
+2026-11-05 17:11:56,268 | INFO | Project6_ML_Modeling | Section 12 started: final full-training model refit.
+2026-11-05 17:13:12,013 | INFO | Project6_ML_Modeling | Full-training Random Forest fit completed.
+2026-11-05 17:13:13,840 | INFO | Project6_ML_Modeling | Section 12 completed successfully. Full-training Random Forest model fitted, evaluated, serialized and verified.
+2026-11-05 19:10:56,625 | INFO | Project6_ML_Modeling | Section 12 started: final full-training model refit.
+2026-11-05 19:11:58,379 | INFO | Project6_ML_Modeling | Full-training Random Forest fit completed.
+2026-11-05 19:12:00,112 | INFO | Project6_ML_Modeling | Section 12 completed successfully. Full-training Random Forest model fitted, evaluated, serialized and verified.
+2026-11-05 21:48:04,171 | INFO | Project6_ML_Modeling | Section 12 started: final full-training model refit.
+2026-11-05 21:49:06,274 | INFO | Project6_ML_Modeling | Full-training Random Forest fit completed.
+2026-11-05 21:49:08,276 | INFO | Project6_ML_Modeling | Section 12 completed successfully. Full-training Random Forest model fitted, evaluated, serialized and verified.
