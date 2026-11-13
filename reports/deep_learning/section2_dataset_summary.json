@@ -1,0 +1,22 @@
+{
+    "project": "Sales Forecasting Across Multiple Retail Stores",
+    "notebook": "05_lstm_deep_learning",
+    "training_rows": 1017209,
+    "training_columns": 19,
+    "test_rows": 41088,
+    "test_columns": 18,
+    "training_date_start": "2013-01-01",
+    "training_date_end": "2015-07-31",
+    "test_date_start": "2015-08-01",
+    "test_date_end": "2015-09-17",
+    "training_stores": 1115,
+    "test_stores": 856,
+    "common_stores": 856,
+    "zero_sales_count": 172871,
+    "zero_sales_percentage": 16.994639253093514,
+    "training_duplicate_count": 0,
+    "test_duplicate_count": 0,
+    "chronological_separation": true,
+    "training_reference_rows_match": true,
+    "test_reference_rows_match": true
+}

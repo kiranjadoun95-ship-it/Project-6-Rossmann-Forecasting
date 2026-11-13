@@ -1,0 +1,13 @@
+Metric,Value
+Training Stores,1115
+Training Observations,970379
+Training Start Date,2013-01-01 00:00:00
+Training End Date,2015-06-19 00:00:00
+Validation Start Date,2015-06-20 00:00:00
+Continuous Time-Series Segments,1295
+Stores With Missing Dates,180
+Total Missing Calendar Dates,33120
+Completed ADF Tests,1295
+Skipped Or Failed ADF Tests,0
+Stationary Segments,1293
+Non-Stationary Segments,2

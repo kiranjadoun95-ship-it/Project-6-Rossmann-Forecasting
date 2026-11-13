@@ -1,0 +1,8 @@
+Metric,Value
+MAE,981.0420229239052
+RMSE,1294.7989777045964
+RMSPE_Percent,21.67216321696907
+MAPE_Percent,16.30551309326672
+Validation_Predictions,46830.0
+Positive_Sales_Observations,40282.0
+Zero_Sales_Observations,6548.0
