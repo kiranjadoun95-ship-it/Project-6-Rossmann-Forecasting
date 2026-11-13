@@ -1,0 +1,41 @@
+{
+    "selected_model": "RF_More_Trees",
+    "number_of_estimators": 60,
+    "lower_quantile": 0.05,
+    "upper_quantile": 0.95,
+    "nominal_interval_coverage_percent": 90.0,
+    "interval_method": "Empirical quantiles of individual Random Forest tree predictions",
+    "point_prediction_method": "Mean prediction across Random Forest trees",
+    "validation_strategy": "Chronological 42-day validation set",
+    "coverage_interpretation": "Exploratory validation diagnostic; not independently calibrated",
+    "statistical_guarantee": "No formal confidence or prediction coverage guarantee",
+    "validation_metrics": [
+        {
+            "Segment": "All Validation",
+            "Observations": 46830,
+            "Covered_Observations": 29698,
+            "Coverage_Percent": 63.416613282084136,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3849.8442326853265,
+            "Median_Interval_Width": 3295.34861109829
+        },
+        {
+            "Segment": "Positive Sales",
+            "Observations": 40282,
+            "Covered_Observations": 23150,
+            "Coverage_Percent": 57.469837644605526,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3499.2261132578237,
+            "Median_Interval_Width": 3120.0157843921324
+        },
+        {
+            "Segment": "Zero Sales",
+            "Observations": 6548,
+            "Covered_Observations": 6548,
+            "Coverage_Percent": 100.0,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 6006.777508002778,
+            "Median_Interval_Width": 5721.875411909292
+        }
+    ]
+}

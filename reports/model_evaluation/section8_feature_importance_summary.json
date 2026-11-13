@@ -1,0 +1,22 @@
+{
+    "selected_model": "RF_More_Trees",
+    "importance_method": "Mean Decrease in Impurity (MDI)",
+    "processed_feature_count": 1149,
+    "original_feature_group_count": 25,
+    "total_processed_importance": 1.0,
+    "total_grouped_importance": 1.0,
+    "top_5_original_features": [
+        "Open",
+        "DayOfWeek",
+        "IsWeekend",
+        "Promo",
+        "Store"
+    ],
+    "interpretation_limitations": [
+        "Feature importance does not establish causation.",
+        "Impurity-based importance may favour high-cardinality features.",
+        "Correlated features can share importance.",
+        "Tree-to-tree variability is not a confidence interval.",
+        "Importance is based on the selected pilot model."
+    ]
+}

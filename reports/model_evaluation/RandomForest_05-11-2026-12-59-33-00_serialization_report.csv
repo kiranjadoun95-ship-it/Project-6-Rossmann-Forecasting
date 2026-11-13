@@ -1,0 +1,10 @@
+Validation_Check,Passed
+Model file exists,True
+Model file is non-empty,True
+Metadata JSON exists,True
+Metadata JSON is non-empty,True
+Bundle structure valid,True
+Reloaded predictions match,True
+Preprocessor reloaded,True
+Feature schema matches,True
+Metadata reload valid,True

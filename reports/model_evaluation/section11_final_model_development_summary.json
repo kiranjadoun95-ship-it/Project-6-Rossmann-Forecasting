@@ -1,0 +1,157 @@
+{
+    "project": "Sales Forecasting Across Multiple Retail Stores",
+    "notebook": "04_machine_learning_modeling_evaluation",
+    "generated_at": "2026-11-05T17:11:55",
+    "completed_sections": {
+        "section_1_successful": true,
+        "section_2_successful": true,
+        "section_3_successful": true,
+        "section_4_successful": true,
+        "section_5_successful": true,
+        "section_6_successful": true,
+        "section_7_successful": true,
+        "section_8_successful": true,
+        "section_9_successful": true,
+        "section_10_successful": true
+    },
+    "selected_model": "RF_More_Trees",
+    "model_stage": "Tuned pilot model - not full-training production model",
+    "model_version": "RandomForest_05-11-2026-17-11-55-00",
+    "model_file": "D:\\Project_6_Rossmann_Forecasting\\models\\machine_learning\\RandomForest_05-11-2026-17-11-55-00.pkl",
+    "model_metadata_file": "D:\\Project_6_Rossmann_Forecasting\\models\\machine_learning\\RandomForest_05-11-2026-17-11-55-00_metadata.json",
+    "model_registry_file": "D:\\Project_6_Rossmann_Forecasting\\models\\machine_learning\\model_version_registry.csv",
+    "training_rows_used": 60000,
+    "available_full_training_rows": 970379,
+    "validation_rows": 46830,
+    "processed_feature_count": 1149,
+    "selected_hyperparameters": {
+        "n_estimators": 60,
+        "max_depth": 18,
+        "min_samples_split": 20,
+        "min_samples_leaf": 10,
+        "max_features": "sqrt",
+        "bootstrap": true,
+        "max_samples": 0.8,
+        "criterion": "squared_error",
+        "random_state": 42,
+        "n_jobs": 2
+    },
+    "selected_validation_metrics": {
+        "MAE": 1898.0759952066767,
+        "RMSE": 2570.8308150833805,
+        "RMSPE_Percent": 42.3913288998378
+    },
+    "pilot_dummy_validation_metrics": {
+        "MAE": 2758.120937903054,
+        "RMSE": 3734.57064689636,
+        "RMSPE_Percent": 45.69300063776609
+    },
+    "relative_error_reduction_vs_pilot_dummy_percent": {
+        "MAE": 31.182278154570437,
+        "RMSE": 31.161275065986853,
+        "RMSPE_Percent": 7.2257713256839535
+    },
+    "rmspe_percentage_point_reduction": 3.301671737928288,
+    "top_10_original_features": [
+        {
+            "Rank": 1,
+            "Original_Feature": "Open",
+            "Importance_Percent": 23.3093554647
+        },
+        {
+            "Rank": 2,
+            "Original_Feature": "DayOfWeek",
+            "Importance_Percent": 21.0782816408
+        },
+        {
+            "Rank": 3,
+            "Original_Feature": "IsWeekend",
+            "Importance_Percent": 12.4656328073
+        },
+        {
+            "Rank": 4,
+            "Original_Feature": "Promo",
+            "Importance_Percent": 11.751107739
+        },
+        {
+            "Rank": 5,
+            "Original_Feature": "Store",
+            "Importance_Percent": 11.3250802303
+        },
+        {
+            "Rank": 6,
+            "Original_Feature": "StateHoliday",
+            "Importance_Percent": 9.0329353293
+        },
+        {
+            "Rank": 7,
+            "Original_Feature": "DaysUntilHoliday",
+            "Importance_Percent": 1.8797868471
+        },
+        {
+            "Rank": 8,
+            "Original_Feature": "StoreType",
+            "Importance_Percent": 1.6616416552
+        },
+        {
+            "Rank": 9,
+            "Original_Feature": "Assortment",
+            "Importance_Percent": 1.1140530657
+        },
+        {
+            "Rank": 10,
+            "Original_Feature": "WeekOfYear",
+            "Importance_Percent": 1.0576958622
+        }
+    ],
+    "prediction_interval_summary": [
+        {
+            "Segment": "All Validation",
+            "Observations": 46830,
+            "Covered_Observations": 29698,
+            "Coverage_Percent": 63.4166132821,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3849.8442326853,
+            "Median_Interval_Width": 3295.3486110983
+        },
+        {
+            "Segment": "Positive Sales",
+            "Observations": 40282,
+            "Covered_Observations": 23150,
+            "Coverage_Percent": 57.4698376446,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 3499.2261132578,
+            "Median_Interval_Width": 3120.0157843921
+        },
+        {
+            "Segment": "Zero Sales",
+            "Observations": 6548,
+            "Covered_Observations": 6548,
+            "Coverage_Percent": 100.0,
+            "Nominal_Coverage_Percent": 90.0,
+            "Mean_Interval_Width": 6006.7775080028,
+            "Median_Interval_Width": 5721.8754119093
+        }
+    ],
+    "overall_interval_coverage_percent": 63.416613282084136,
+    "nominal_interval_coverage_percent": 90.0,
+    "interval_coverage_gap_percentage_points": 26.583386717915864,
+    "source_metadata_audit_passed": true,
+    "source_metadata_discrepancies": [],
+    "serialized_model_reload_predictions_match": true,
+    "known_limitations": [
+        "The selected Random Forest is a tuned pilot trained on 60,000 rows, not the complete 970,379-row training dataset.",
+        "The chronological validation set was used for hyperparameter selection; validation metrics are not an independent final generalization estimate.",
+        "The empirical tree-spread interval achieved 63.42% overall validation coverage against a nominal 90.00% level; it is not calibrated to the nominal coverage.",
+        "Tree-to-tree prediction spread is not a guaranteed statistical confidence interval or prediction coverage guarantee.",
+        "The original Notebook 03 metadata JSON has recorded discrepancies: missing train_rows and preprocessing_fitted_on fields. The source metadata was preserved.",
+        "This model predicts Sales only. A separate Customers prediction model is still required for the dashboard requirement.",
+        "LSTM, MLflow serving and the web dashboard remain separate project stages."
+    ],
+    "next_project_stages": [
+        "LSTM time-series modelling (Task 2.6)",
+        "MLflow tracking and serving (Task 2.7)",
+        "Separate Customers prediction model for dashboard requirements",
+        "Sales and Customers prediction dashboard, CSV export and deployment (Task 3)"
+    ]
+}

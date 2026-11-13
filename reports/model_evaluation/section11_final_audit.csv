@@ -1,0 +1,19 @@
+Check,Passed
+Sections 1-10 completed,True
+Selected estimator is RandomForestRegressor,True
+Selected validation predictions valid,True
+Final metrics table has three models,True
+Top feature summary available,True
+Prediction interval summary has three segments,True
+Serialized model bundle reload valid,True
+Serialized predictions match,True
+Saved model metadata valid,True
+Model registry contains current version,True
+Source metadata discrepancies documented,True
+Output saved: section11_final_validation_metrics.csv,True
+Output saved: section11_final_relative_improvement.csv,True
+Output saved: section11_top_original_features.csv,True
+Output saved: section11_prediction_interval_summary.csv,True
+Output saved: section11_final_model_development_summary.json,True
+Output saved: section11_final_model_development_report.md,True
+Output saved: section11_final_model_performance.png,True
